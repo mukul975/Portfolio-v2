@@ -60,6 +60,81 @@
                 <p>Front-End Developer</p>
                 <p>Security Enthusiast</p>
             </div>
+             <h1><span id="greetingText">Hello</span>, I am<br><span style="font-size: 1.5em;">Mahipal</span></h1>
+             <script>
+                       const greetings = [
+  'Hello', // English
+  'नमस्ते', // Hindi
+  'ᱡᱚᱦᱟᱨ', // Santali
+  'নমস্কার', // Bengali
+  'Konnichiwa', // Japanese
+  'Bonjour', // French
+  'Hola', // Spanish
+  'Ni hao', // Mandarin Chinese
+  'Hallo', // German
+  'வணக்கம்', // Tamil
+  'Dia dhuit', // Irish
+  'Olà', // Portuguese
+  'Guten Tag', // German (formal)
+  'Salve', // Latin
+  'Ciao', // Italian
+  'שלום', // Hebrew
+  'Здравствуйте', // Russian
+  'مرحبًا', // Arabic
+  'Xin Chào', // Vietnamese
+  'Sawubona', // Zulu
+  '안녕하세요', // Korean
+  'Merhaba', // Turkish
+  'Hej', // Swedish
+  'Tere', // Estonian
+  'Sveiki', // Latvian
+  'Labas', // Lithuanian
+  'Jambo', // Swahili
+  'Salam', // Persian
+  'Hei', // Norwegian
+  'Halo', // Indonesian
+  'Szia', // Hungarian
+  'Γειά σου', // Greek
+  'Ahoj', // Czech
+  'Привет', // Bulgarian
+  'Sveiki', // Lithuanian (again, for consistency)
+  'Buna', // Romanian
+  'नमस्कार', // Nepali
+  'สวัสดี', // Thai
+  'ជំរាបសួរ', // Khmer
+  'ສະບາຍດີ', // Lao
+  'Mingalaba', // Burmese
+  'Namaste', // Sanskrit
+  'Hallo', // Dutch
+  'Hej', // Danish
+  'Hello', // Esperanto
+  'Bonghjornu', // Corsican
+  'Yassas', // Greek (informal)
+  'Pryvit', // Ukrainian
+  'Barev', // Armenian
+  'გამარჯობა', // Georgian
+  'Aloha', // Hawaiian
+  'Moïen', // Luxembourgish
+  'Hallo', // Afrikaans
+  'Asalaam alaikum', // Pashto
+  'Selam', // Amharic
+];
+                        let index = 0;
+                
+                        function changeGreeting() {
+                            const greetingTextElement = document.getElementById('greetingText');
+                
+                            greetingTextElement.style.opacity = 0; // Fade out
+                
+                            setTimeout(() => {
+                                greetingTextElement.innerHTML = greetings[index]; // Update greeting content
+                                greetingTextElement.style.opacity = 1; // Fade in
+                                index = (index + 1) % greetings.length;
+                            }, 500); // Wait for fade out before updating greeting content
+                        }
+                
+                        setInterval(changeGreeting, 2000); // 2 seconds interval (including fade in/out time)
+                    </script>
             <div class="body-title">
                 <!-- <h1>Talk is cheap<br>Show me the code</h1> -->
                 <h1>Cybersecurity Guardian<br>Front-End Maestro</h1>
