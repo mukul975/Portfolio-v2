@@ -12,7 +12,19 @@
 html {
   scroll-behavior: smooth;
 }
-
+#announcement-banner {
+  background-color: #00b840; /* Green color */
+  color: #ffffff; /* White text */
+  text-align: center;
+  padding: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2; /* Ensure it stays on top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 h1 {
   font-size: 50px;
   font-weight: 400;
