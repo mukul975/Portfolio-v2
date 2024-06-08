@@ -12,11 +12,12 @@
 html {
   scroll-behavior: smooth;
 }
+
 #announcement-banner {
   background-color: #00b840; /* Green color */
   color: #ffffff; /* White text */
   text-align: center;
-  padding: 5px 0;
+  padding: 10px 0;
   font-size: 16px;
   font-weight: bold;
   position: sticky;
@@ -24,7 +25,36 @@ html {
   width: 100%;
   z-index: 2; /* Ensure it stays on top */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: glow 1s infinite alternate;
+  overflow: hidden; /* Hide overflowing text */
 }
+
+@keyframes glow {
+  from {
+      box-shadow: 0 0 10px #00b840, 0 0 20px #00b840, 0 0 30px #00b840;
+  }
+  to {
+      box-shadow: 0 0 20px #00b840, 0 0 30px #00b840, 0 0 40px #00b840;
+  }
+}
+
+#announcement-banner p {
+  display: inline-block;
+  white-space: nowrap;
+  animation: moveText 10s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* Existing CSS */
+
 h1 {
   font-size: 50px;
   font-weight: 400;
