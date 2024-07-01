@@ -8,6 +8,9 @@
   font-family: "Raleway", sans-serif;
   font-family: "Source Code Pro", monospace;
 }
+.menu-toggle {
+  display: none;
+}
 
 html {
   scroll-behavior: smooth;
@@ -31,10 +34,10 @@ html {
 
 @keyframes glow {
   from {
-      box-shadow: 0 0 10px #00b840, 0 0 20px #00b840, 0 0 30px #00b840;
+    box-shadow: 0 0 10px #00b840, 0 0 20px #00b840, 0 0 30px #00b840;
   }
   to {
-      box-shadow: 0 0 20px #00b840, 0 0 30px #00b840, 0 0 40px #00b840;
+    box-shadow: 0 0 20px #00b840, 0 0 30px #00b840, 0 0 40px #00b840;
   }
 }
 
@@ -46,10 +49,10 @@ html {
 
 @keyframes moveText {
   0% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
@@ -127,25 +130,23 @@ body::selection {
   background: #64f4ac;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: transparent;
 }
 
-::-webkit-scrollbar-thumb{
-  background: #CACACA;
+::-webkit-scrollbar-thumb {
+  background: #cacaca;
   transition: 0.3s ease;
   border-radius: 15px;
 }
 
-::-webkit-scrollbar-thumb:hover{
-  background: #FEFEFE;
+::-webkit-scrollbar-thumb:hover {
+  background: #fefefe;
 }
-
-
 
 /* ---------- SECTION HEADER ---------- */
 #header {
@@ -164,12 +165,6 @@ body::selection {
   left: 0;
   margin: 0;
 }
-
-/* #content-body {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
 
 .navbar-title {
   display: flex;
@@ -237,6 +232,7 @@ body::selection {
   font-size: 14px;
   transition: 0.3s ease;
 }
+
 .social-media li a {
   color: #fefefe;
   text-decoration: none;
@@ -270,10 +266,9 @@ body::selection {
   margin-bottom: 10vh;
   max-height: 100vh;
 }
-#aboutme{
+#aboutme {
   display: flex;
   background-color: #25262a;
-  
   height: 90vh;
   align-content: center;
   align-items: center;
@@ -314,7 +309,6 @@ body::selection {
 }
 
 .body-title p {
-  
   font-size: 13px;
   padding: 20px 0;
   color: #cacaca;
@@ -347,6 +341,7 @@ body::selection {
   position: relative;
   perspective: 1000px;
 }
+
 .background-circle {
   background: #28292d;
   border-radius: 50%;
@@ -358,7 +353,6 @@ body::selection {
 
 .svg-animation {
   position: relative;
-  
   top: 100px;
   height: 550px;
   width: 490px;
@@ -367,9 +361,7 @@ body::selection {
   align-items: center;
   transform: translate(5%, -25%);
   background-size: cover;
-  
 }
-
 
 #introduction {
   display: flex;
@@ -426,7 +418,6 @@ body::selection {
 }
 
 .design-card {
- 
   position: relative;
   max-width: 80%;
   min-height: 150px;
@@ -489,7 +480,8 @@ body::selection {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
-.cards-container, 
+
+.cards-container,
 .image-container {
   width: 50%;
 }
@@ -500,10 +492,6 @@ body::selection {
 .image-container {
   padding-left: 20px;
 }
-
-
-
-
 
 /* ----------FOOTER---------- */
 #footer {
@@ -591,7 +579,7 @@ body::selection {
 }
 
 .email-form div button:hover {
-  background-color: #45A877;
+  background-color: #45a877;
 }
 
 .footer-title {
@@ -620,13 +608,13 @@ body::selection {
 .footer-email-intro h6 {
   font-size: 18px;
   font-weight: 400;
-  color: #7C7D81;
+  color: #7c7d81;
   margin-top: 10px;
 }
 
 .footer-email-intro h3 {
   font-size: 26px;
-  color: #FFF;
+  color: #fff;
   font-weight: 400;
   margin: 10px 0;
 }
@@ -667,7 +655,7 @@ body::selection {
 }
 
 .social-icons a i {
-  color: #FFF;
+  color: #fff;
   margin: 0 5px;
   transition: 0.3s ease;
   cursor: pointer;
@@ -687,14 +675,271 @@ body::selection {
 
 .social-icons a:nth-child(5) i:hover {
   color: transparent;
-  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
   background-clip: text;
   -webkit-background-clip: text;
 }
 
 .social-icons a:nth-child(6) i:hover {
   color: #3b5998;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* Tablets and larger devices */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .section-p1 {
+    padding: 30px 60px;
+  }
+
+  #content-body,
+  #aboutme {
+    padding: 80px 20px;
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+  }
+
+  .developer-intro p {
+    font-size: 12px;
+  }
+
+  .body-title h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .body-title p {
+    font-size: 12px;
+  }
+
+  .cards-container,
+  .image-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  #footer {
+    flex-direction: column;
+    padding: 50px 20px;
+    height: auto;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+
+  .email-form {
+    width: 100%;
+    padding: 30px 10%;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  @media (max-width: 768px) {
+    #header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #fff;
+      cursor: pointer;
+      margin-left: auto;
+    }
+  
+    .navbar-menu-container {
+      display: none;
+      width: 100%;
+    }
+  
+    .navbar-menu {
+      flex-direction: column;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .navbar-menu li {
+      padding: 10px 0;
+    }
+  
+    .navbar-menu li a {
+      font-size: 18px;
+      padding: 10px 20px;
+      display: block;
+      width: 100%;
+    }
+  
+    .social-media-container {
+      display: none;
+      width: 100%;
+    }
+  
+    .social-media {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .social-media li {
+      padding: 10px 0;
+    }
+  
+    .social-media li a {
+      font-size: 18px;
+      padding: 10px 20px;
+      display: block;
+      width: 100%;
+    }
+  
+    #content-body,
+    #aboutme,
+    #introduction,
+    #skill {
+      padding: 20px 10px;
+      flex-direction: column;
+    }
+  
+    .cards-container,
+    .image-container {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .design-card {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  
+    .svg-animation img {
+      width: 100%;
+    }
+  }
+  
+  /* Mobile menu active state */
+  .navbar-menu-container.active,
+  .social-media-container.active {
+    display: flex;
+  }
+
+  .navbar-title,
+  .navbar-menu,
+  .social-media {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu li,
+  .social-media li {
+    padding: 10px 0;
+  }
+
+  .navbar-menu li a,
+  .social-media li a {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .section-p1 {
+    padding: 20px 20px;
+  }
+
+  button.normal {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  #content-body,
+  #aboutme {
+    flex-direction: column;
+    padding: 50px 20px;
+    height: auto;
+    max-height: none;
+  }
+
+  .developer-intro p {
+    font-size: 12px;
+  }
+
+  .body-title h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .body-title p {
+    font-size: 12px;
+  }
+
+  .cards-container,
+  .image-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  #footer {
+    flex-direction: column;
+    padding: 30px 20px;
+    height: auto;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+
+  .email-form {
+    width: 100%;
+    padding: 20px 10%;
+  }
 }
