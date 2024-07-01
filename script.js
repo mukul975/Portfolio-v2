@@ -42,6 +42,16 @@ single_profile_card.forEach((btn, index) => {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbarMenuContainer = document.querySelector('.navbar-menu-container');
+    const socialMediaContainer = document.querySelector('.social-media-container');
+
+    menuToggle.addEventListener('click', function () {
+        navbarMenuContainer.classList.toggle('active');
+        socialMediaContainer.classList.toggle('active');
+    });
+});
 
 
 
