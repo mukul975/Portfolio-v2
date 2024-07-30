@@ -101,4 +101,6 @@ GitHub: [mukul975](https://github.com/mukul975)
 
 ---
 
-Thank you for visiting the portfolio website. Let's connect and create something amazing together!
+Thank you for visiting the portfolio website. If you like the design, please follow and share!
+
+Let's connect and create something amazing together!
