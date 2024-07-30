@@ -352,15 +352,40 @@ body::selection {
 }
 
 .svg-animation {
-  position: relative;
-  top: 100px;
-  height: 550px;
-  width: 490px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(5%, -25%);
-  background-size: cover;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.responsive-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Media queries for further adjustments */
+@media (max-width: 1200px) {
+  .svg-animation {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .svg-animation {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .svg-animation {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .svg-animation {
+    max-width: 100%;
+  }
 }
 
 #introduction {
@@ -841,10 +866,7 @@ body::selection {
       margin: 10px 0;
     }
   
-    .svg-animation img {
-      width: 100%;
-    }
-  }
+  
   
   /* Mobile menu active state */
   .navbar-menu-container.active,
