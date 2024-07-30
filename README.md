@@ -51,21 +51,20 @@ To get a local copy of this project up and running on your machine, follow these
 
 1. **Clone the repository:**
    
-   \`\`\`bash
+
    git clone https://github.com/mahipal975/portfolio.git
-   \`\`\`
+
 
 3. **Navigate to the project directory:**
 
-   \`\`\`bash
+  
    cd portfolio
-   \`\`\`
+  
 
 5. **Open the index.html file in your web browser:**
 
-    \`\`\`bash
+    
    open index.html
-   \`\`\`
 
 ## Usage
 
