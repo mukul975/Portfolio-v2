@@ -94,7 +94,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-Mahipal Jangra  
+Mahipal
 Email: [mukuljangra5@gmail.com](mailto:mukuljangra5@gmail.com)  
 LinkedIn: [Mahipal](https://www.linkedin.com/in/mahipal975/)  
 GitHub: [mukul975](https://github.com/mukul975)  
