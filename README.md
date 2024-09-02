@@ -52,7 +52,7 @@ To get a local copy of this project up and running on your machine, follow these
 1. **Clone the repository:**
    
 
-   git clone https://github.com/mahipal975/portfolio.git
+   git clone https://github.com/mukul975/Portfolio-v2.git
 
 
 3. **Navigate to the project directory:**
