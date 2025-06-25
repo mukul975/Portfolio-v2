@@ -11,6 +11,11 @@
   display: none;
 }
 
+#greetingText .greet-word {
+  display: inline-block;
+  opacity: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
