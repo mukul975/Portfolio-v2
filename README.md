@@ -25,6 +25,7 @@ This portfolio website is designed to highlight Mahipal's expertise in front-end
 
 - **Responsive Design**: Adapts to different screen sizes for optimal viewing on any device.
 - **Interactive Elements**: Dynamic content display using JavaScript.
+- **Animated Greeting**: Multilingual greeting text animates each word with Anime.js.
 - **Announcement Banner**: Highlights important announcements at the top of the page.
 - **Project Showcase**: Displays latest projects with detailed descriptions.
 - **Skills Section**: Lists technical skills and expertise.
@@ -37,6 +38,7 @@ This portfolio website is designed to highlight Mahipal's expertise in front-end
 - **JavaScript**: Interactive elements and dynamic content display.
 - **Google Fonts**: Custom fonts for enhanced typography.
 - **FontAwesome**: Icons for social media links and other elements.
+- **Anime.js**: Lightweight animation library for the greeting effect.
 
 ## Getting Started
 

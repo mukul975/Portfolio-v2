@@ -1,47 +1,17 @@
-const design_card_butttons = document.querySelectorAll('.design-card');
-const introduction_text = document.querySelectorAll('.introduction-text');
+const designCardButtons = document.querySelectorAll('.design-card');
 
-const single_profile_card = document.querySelectorAll('.single-profile-card');
-const testimonial_card = document.querySelectorAll('.testimonial-card');
-
-design_card_butttons.forEach((button, index) => {
+designCardButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        introduction_text.forEach((introduction, introductionIndex) => {
-            if (index === introductionIndex) {
-                introduction.style.display = 'block';
-            } else {
-                introduction.style.display = 'none';
-            }
-        });
-        design_card_butttons.forEach((btn, btnIndex) => {
+        designCardButtons.forEach((btn, btnIndex) => {
             if (index === btnIndex) {
                 btn.classList.add('active');
             } else {
                 btn.classList.remove('active');
-                
             }
         });
     });
 });
 
-single_profile_card.forEach((btn, index) => {
-    btn.addEventListener('click', ()=> {
-        testimonial_card.forEach((testimonialCard, testimonialCardIndex) => {
-            if (index === testimonialCardIndex) {
-                testimonialCard.style.display = 'block';
-            } else {
-                testimonialCard.style.display = 'none';
-            }
-        });
-        single_profile_card.forEach((cardBtn, cardIndex) => {
-            if (index === cardIndex) {
-                cardBtn.classList.add('profile-card-active');
-            } else {
-                cardBtn.classList.remove('profile-card-active');
-            }
-        });
-    });
-});
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menu-toggle');
     const navbarMenuContainer = document.querySelector('.navbar-menu-container');
@@ -51,7 +21,63 @@ document.addEventListener('DOMContentLoaded', function () {
         navbarMenuContainer.classList.toggle('active');
         socialMediaContainer.classList.toggle('active');
     });
+
+    if (window.anime) {
+        const greetingText = document.getElementById('greetingText');
+        const greetings = [
+            'Stay safe from cyber',
+            'साइबर से सुरक्षित रहें',
+            'সাইবার থেকে নিরাপদ থাকুন',
+            'サイバーから安全に過ごしてください',
+            'Restez en sécurité contre le cyber',
+            'Mantente seguro del ciber',
+            '保持网络安全',
+            'Bleib sicher vor Cybergefahren',
+            'சைபர் ஆபத்திலிருந்து பாதுகாப்பாக இருங்கள்',
+            'Fanacht sábháilte ón gcibear',
+            'Manténgase seguro del ciber',
+            'Bleiben Sie sicher vor Cyber',
+            'Stai al sicuro dal cyber',
+            'שמור על עצמך בטוח מפני סייבר',
+            'Оставайтесь в безопасности от киберугроз',
+            'ابق آمناً من الخطر السيبراني',
+            'Hãy an toàn khỏi mối đe dọa mạng'
+        ];
+
+        let greetIndex = 0;
+
+        function animateGreeting(text) {
+            greetingText.innerHTML = '';
+            text.split(' ').forEach((word, i) => {
+                const span = document.createElement('span');
+                span.className = 'greet-word';
+                span.textContent = word;
+                greetingText.appendChild(span);
+                if (i < text.split(' ').length - 1) {
+                    greetingText.appendChild(document.createTextNode(' '));
+                }
+            });
+
+            anime({
+                targets: '#greetingText span',
+                opacity: [0, 1],
+                translateY: [
+                    { value: '-2.75rem', easing: 'easeOutExpo', duration: 600 },
+                    { value: 0, easing: 'easeOutBounce', duration: 800, delay: 100 }
+                ],
+                rotate: {
+                    value: '-1turn',
+                    delay: 0
+                },
+                delay: (_, i) => i * 50,
+                easing: 'easeInOutCirc',
+                complete: () => {
+                    greetIndex = (greetIndex + 1) % greetings.length;
+                    setTimeout(() => animateGreeting(greetings[greetIndex]), 1000);
+                }
+            });
+        }
+
+        animateGreeting(greetings[greetIndex]);
+    }
 });
-
-
-

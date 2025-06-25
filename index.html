@@ -22,8 +22,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahipal Jangra's portfolio showcasing projects, skills, and contact information.">
     <title>Mahipal</title>
     <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/cyber.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -47,8 +49,8 @@
         </div>
         <div class="social-media-container">
             <ul class="social-media">
-                <li><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mahipal975/" target="_blank">LinkedIn</a></li>
-                <li><i class="fa-brands fa-github"></i><a href="https://github.com/mukul975" target="_blank">Github</a></li>
+                <li><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mahipal975/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><i class="fa-brands fa-github"></i><a href="https://github.com/mukul975" target="_blank" rel="noopener noreferrer">Github</a></li>
                 <li><i class="fa-regular fa-envelope"></i><a href="mailto:mukuljangra5@gmail.com">Email</a></li>
             </ul>
         </div>
@@ -65,26 +67,7 @@
                 <p>Front-End Developer</p>
                 <p>Security Enthusiast</p>
             </div><br>
-             <h2><span id="greetingText">Stay safe from cyber</span></h2>
-             <script>
-                       const greetings = [
-  'Stay safe from cyber','साइबर से सुरक्षित रहें','সাইবার থেকে নিরাপদ থাকুন','サイバーから安全に過ごしてください','Restez en sécurité contre le cyber','Mantente seguro del ciber','保持网络安全','Bleib sicher vor Cybergefahren', 'சைபர் ஆபத்திலிருந்து பாதுகாப்பாக இருங்கள்','Fanacht sábháilte ón gcibear','Manténgase seguro del ciber','Bleiben Sie sicher vor Cyber','Stai al sicuro dal cyber','שמור על עצמך בטוח מפני סייבר','Оставайтесь в безопасности от киберугроз','ابق آمناً من الخطر السيبراني','Hãy an toàn khỏi mối đe dọa mạng'];
-                        let index = 0;
-                
-                        function changeGreeting() {
-                            const greetingTextElement = document.getElementById('greetingText');
-                
-                            greetingTextElement.style.opacity = 0; // Fade out
-                
-                            setTimeout(() => {
-                                greetingTextElement.innerHTML = greetings[index]; // Update greeting content
-                                greetingTextElement.style.opacity = 1; // Fade in
-                                index = (index + 1) % greetings.length;
-                            }, 500); // Wait for fade out before updating greeting content
-                        }
-                
-                        setInterval(changeGreeting, 5000); // 2 seconds interval (including fade in/out time)
-                    </script>
+            <h2><span id="greetingText">Stay safe from cyber</span></h2>
             <div class="body-title">
                 <!-- <h1>Talk is cheap<br>Show me the code</h1> -->
                 <h1>Cybersecurity Guardian<br>Front-End Maestro</h1>
@@ -233,7 +216,7 @@
                 <div class="container">
                     
                     <div class="svg-animation">
-                        <img src="assets/skill.svg" alt="Skill SVG" class="responsive-svg">svg">
+                        <img src="assets/skill.svg" alt="Skill SVG" class="responsive-svg">
                     </div>
                   
                 </div>
@@ -294,7 +277,7 @@
  
     <section id="footer">
         <div class="footer-left">
-            <form name = 'contactus' netlify>
+            <form name="contactus" netlify method="POST">
             <h2>Let's make something amazing together</h2>
 
             <div class="email-form">
@@ -304,11 +287,11 @@
                 <input type="text" name="name" id="" placeholder="Your name">
                 <input type="email" name="email" id="" placeholder="Email Address">
                 <div>
-                    <input type="text" name="Messgae" id="" placeholder="Messgae">
+                    <textarea name="message" placeholder="Message"></textarea>
                     <button type="submit">Send</button>
                 </div>
-                    </form>
             </div>
+            </form>
 
             <div class="footer-title">
                 <h3 class="title-first-name">
@@ -334,21 +317,22 @@
                 </ul>
             </div>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/mahipal975/" target="_blank">
+                <a href="https://www.linkedin.com/in/mahipal975/" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/mukul975" target="_blank">
+                <a href="https://github.com/mukul975" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-github"></i>
                 </a>
                 
               
-                <a href="https://www.instagram.com/_mukul.jangra_/" target="_blank">
+                <a href="https://www.instagram.com/_mukul.jangra_/" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
     <script src="script.js"></script>
 </body>
 
