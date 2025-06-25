@@ -47,8 +47,8 @@
         </div>
         <div class="social-media-container">
             <ul class="social-media">
-                <li><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mahipal975/" target="_blank">LinkedIn</a></li>
-                <li><i class="fa-brands fa-github"></i><a href="https://github.com/mukul975" target="_blank">Github</a></li>
+                <li><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mahipal975/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><i class="fa-brands fa-github"></i><a href="https://github.com/mukul975" target="_blank" rel="noopener noreferrer">Github</a></li>
                 <li><i class="fa-regular fa-envelope"></i><a href="mailto:mukuljangra5@gmail.com">Email</a></li>
             </ul>
         </div>
@@ -233,7 +233,7 @@
                 <div class="container">
                     
                     <div class="svg-animation">
-                        <img src="assets/skill.svg" alt="Skill SVG" class="responsive-svg">svg">
+                        <img src="assets/skill.svg" alt="Skill SVG" class="responsive-svg">
                     </div>
                   
                 </div>
@@ -294,7 +294,7 @@
  
     <section id="footer">
         <div class="footer-left">
-            <form name = 'contactus' netlify>
+            <form name="contactus" netlify method="POST">
             <h2>Let's make something amazing together</h2>
 
             <div class="email-form">
@@ -304,11 +304,11 @@
                 <input type="text" name="name" id="" placeholder="Your name">
                 <input type="email" name="email" id="" placeholder="Email Address">
                 <div>
-                    <input type="text" name="Messgae" id="" placeholder="Messgae">
+                    <textarea name="message" placeholder="Message"></textarea>
                     <button type="submit">Send</button>
                 </div>
-                    </form>
             </div>
+            </form>
 
             <div class="footer-title">
                 <h3 class="title-first-name">
@@ -334,21 +334,22 @@
                 </ul>
             </div>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/mahipal975/" target="_blank">
+                <a href="https://www.linkedin.com/in/mahipal975/" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/mukul975" target="_blank">
+                <a href="https://github.com/mukul975" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-github"></i>
                 </a>
                 
               
-                <a href="https://www.instagram.com/_mukul.jangra_/" target="_blank">
+                <a href="https://www.instagram.com/_mukul.jangra_/" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
     <script src="script.js"></script>
 </body>
 
