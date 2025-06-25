@@ -1,29 +1,41 @@
 
-const designCardButtons = document.querySelectorAll('.design-card');
 
-designCardButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-        designCardButtons.forEach((btn, btnIndex) => {
+        let greetIndex = 0;
+        function animateGreeting(text) {
+            const words = text.split(' ');
+            greetingText.innerHTML = '';
+            words.forEach((word, i) => {
+                const span = document.createElement('span');
+                span.className = 'greet-word';
+                span.textContent = word;
+                greetingText.appendChild(span);
+                if (i < words.length - 1) {
+                    greetingText.appendChild(document.createTextNode(' '));
+                }
+            });
+            const wordSpans = greetingText.querySelectorAll('.greet-word');
+            anime.timeline({
+                complete: () => {
+                    setTimeout(() => animateGreeting(greetings[greetIndex]), 1000);
+            })
+            .add({
+                targets: wordSpans,
+                opacity: [0, 1],
+                translateY: [-10, 0],
+                duration: 400,
+                easing: 'easeOutQuad',
+                delay: anime.stagger(300)
+            })
+            .add({
+                targets: wordSpans,
+                opacity: [1, 0],
+                duration: 400,
+                easing: 'easeInQuad',
+                delay: anime.stagger(200),
+                endDelay: 500
+        }
 
-const design_card_butttons = document.querySelectorAll('.design-card');
-
-design_card_butttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-        design_card_butttons.forEach((btn, btnIndex) => {
-
-            if (index === btnIndex) {
-                btn.classList.add('active');
-            } else {
-                btn.classList.remove('active');
-
-
-            }
-
-
-            }
-        });
-    });
-});
+        animateGreeting(greetings[greetIndex]);
 
     document.addEventListener('DOMContentLoaded', function () {
         const menuToggle = document.getElementById('menu-toggle');
