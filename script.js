@@ -1,16 +1,69 @@
+
 const designCardButtons = document.querySelectorAll('.design-card');
 
 designCardButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
         designCardButtons.forEach((btn, btnIndex) => {
+
+
+const designCardButtons = document.querySelectorAll('.design-card');
+
+designCardButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        designCardButtons.forEach((btn, btnIndex) => {
+
+const design_card_butttons = document.querySelectorAll('.design-card');
+
+design_card_butttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        design_card_butttons.forEach((btn, btnIndex) => {
+
+
             if (index === btnIndex) {
                 btn.classList.add('active');
             } else {
                 btn.classList.remove('active');
+
             }
         });
     });
 });
+
+
+
+
+            }
+
+
+            }
+        });
+    });
+});
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbarMenuContainer = document.querySelector('.navbar-menu-container');
+        const socialMediaContainer = document.querySelector('.social-media-container');
+
+        menuToggle.addEventListener('click', function () {
+            navbarMenuContainer.classList.toggle('active');
+            socialMediaContainer.classList.toggle('active');
+
+        });
+
+        if (window.anime) {
+            anime({
+                targets: '#greetingText',
+                opacity: [0, 1],
+                translateY: [-10, 0],
+                duration: 800,
+                easing: 'easeOutQuad'
+            });
+        }
+    });
+
+});
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menu-toggle');
@@ -46,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let greetIndex = 0;
 
+
         function animateGreeting(text) {
             greetingText.innerHTML = '';
             text.split(' ').forEach((word, i) => {
@@ -79,5 +133,56 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         animateGreeting(greetings[greetIndex]);
+
+    if (window.anime) {
+        const greetingText = document.getElementById('greetingText');
+        const greetings = [
+            'Stay safe from cyber',
+            'साइबर से सुरक्षित रहें',
+            'সাইবার থেকে নিরাপদ থাকুন',
+            'サイバーから安全に過ごしてください',
+            'Restez en sécurité contre le cyber',
+            'Mantente seguro del ciber',
+            '保持网络安全',
+            'Bleib sicher vor Cybergefahren',
+            'சைபர் ஆபத்திலிருந்து பாதுகாப்பாக இருங்கள்',
+            'Fanacht sábháilte ón gcibear',
+            'Manténgase seguro del ciber',
+            'Bleiben Sie sicher vor Cyber',
+            'Stai al sicuro dal cyber',
+            'שמור על עצמך בטוח מפני סייבר',
+            'Оставайтесь в безопасности от киберугроз',
+            'ابق آمناً من الخطر السيبراني',
+            'Hãy an toàn khỏi mối đe dọa mạng'
+        ];
+
+        anime({
+            targets: greetingText,
+            opacity: [0, 1],
+            translateY: [-10, 0],
+            duration: 800,
+            easing: 'easeOutQuad'
+        });
+
+        let greetIndex = 1;
+        setInterval(() => {
+            anime({
+                targets: greetingText,
+                opacity: [1, 0],
+                duration: 500,
+                easing: 'easeInQuad',
+                complete: function () {
+                    greetingText.textContent = greetings[greetIndex];
+                    anime({
+                        targets: greetingText,
+                        opacity: [0, 1],
+                        duration: 500,
+                        easing: 'easeOutQuad'
+                    });
+                    greetIndex = (greetIndex + 1) % greetings.length;
+                }
+            });
+        }, 5000);
+
     }
 });
