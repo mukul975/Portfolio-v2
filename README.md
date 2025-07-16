@@ -1,7 +1,7 @@
 
 # Mahipal Portfolio Website
 
-<h1><a href="https://mahipal.tech/"> Click to Check Live</a></h1>
+<h1><a href="https://mukul975.github.io/Portfolio-v2/"> Click to Check Live</a></h1>
 <img src="assets/Mockup.png"><br>
 
 This repository contains the source code for Mahipal's personal portfolio website, showcasing projects, skills, and contact information. The website is built with HTML, CSS, and JavaScript.
