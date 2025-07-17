@@ -25,14 +25,12 @@ This portfolio website is designed to highlight Mahipal's expertise in front-end
 
 - **Responsive Design**: Adapts to different screen sizes for optimal viewing on any device.
 - **Interactive Elements**: Dynamic content display using JavaScript.
-
 - **Animated Greeting**: Multilingual greeting text animates each word with Anime.js.
-- **Animated Greeting**: Multilingual greeting text powered by Anime.js.
-
 - **Announcement Banner**: Highlights important announcements at the top of the page.
 - **Project Showcase**: Displays latest projects with detailed descriptions.
 - **Skills Section**: Lists technical skills and expertise.
 - **Contact Form**: Allows visitors to send messages directly through the website.
+- **CSS Refactor**: Redundant style declarations for `.cards` and `.design-card` in the `#introduction` section were removed from `style.css`, improving maintainability.
 
 ## Technologies Used
 
