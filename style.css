@@ -319,9 +319,9 @@ body::selection {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 40px 80px 40px !important;
+  padding: 100px 40px 80px 40px;
   min-height: 95vh;
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
   position: relative;
 }
@@ -344,7 +344,7 @@ body::selection {
 @media (max-width: 900px) {
   #research > div {
     flex-direction: column;
-    padding: 40px 10px 20px 10px !important;
+    padding: 40px 10px 20px 10px;
     min-height: unset;
   }
   #research .cards-container,
@@ -353,6 +353,8 @@ body::selection {
     padding: 0;
   }
   #research .cards-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 }
@@ -1128,12 +1130,10 @@ h2.impact-title {
   gap: 20px;
 }
 #introduction .cards {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  /* Only override properties that differ from global .cards if needed */
 }
 #introduction .design-card {
-  min-height: 150px;
+  /* Only override properties that differ from global .design-card if needed */
 }
 @media (max-width: 1100px) {
   #introduction .cards-container {
