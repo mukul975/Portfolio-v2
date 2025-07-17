@@ -19,7 +19,7 @@ This repository contains the source code for Mahipal's personal portfolio websit
 
 ## Project Overview
 
-This portfolio website is designed to highlight Mahipal's expertise in front-end development and cybersecurity. It features sections for About Me, Works, Skills, and Contact information. The site is fully responsive and includes interactive elements to enhance user experience.
+This portfolio website is designed to highlight Mahipal's expertise in front-end development and cybersecurity. It features sections for About Me, Works, Skills, Research, and Contact information. The site is fully responsive and includes interactive elements to enhance user experience.
 
 ## Features
 
@@ -30,6 +30,7 @@ This portfolio website is designed to highlight Mahipal's expertise in front-end
 - **Project Showcase**: Displays latest projects with detailed descriptions.
 - **Skills Section**: Lists technical skills and expertise.
 - **Contact Form**: Allows visitors to send messages directly through the website.
+- **Research Section**: Explore research projects and related work in a dedicated section.
 - **CSS Refactor**: Redundant style declarations for `.cards` and `.design-card` in the `#introduction` section were removed from `style.css`, improving maintainability.
 
 ## Technologies Used
@@ -75,6 +76,7 @@ The website is structured into several sections:
    - **About Me**: Detailed biography and background information.
    - **Projects**: Showcases latest projects with descriptions.
    - **Skills**: Lists technical skills and areas of expertise.
+   - **Research**: Explore research projects and related work.
 4. **Footer**: Includes a contact form and additional navigation links.
 
 ### Navigation
