@@ -1,80 +1,61 @@
-
-const designCardButtons = document.querySelectorAll('.design-card');
-
-designCardButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-        designCardButtons.forEach((btn, btnIndex) => {
-
-
-const designCardButtons = document.querySelectorAll('.design-card');
-
-designCardButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-        designCardButtons.forEach((btn, btnIndex) => {
-
-const design_card_butttons = document.querySelectorAll('.design-card');
-
-design_card_butttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-        design_card_butttons.forEach((btn, btnIndex) => {
-
-
-            if (index === btnIndex) {
-                btn.classList.add('active');
-            } else {
-                btn.classList.remove('active');
-
-            }
-        });
-    });
-});
-
-
-
-
-            }
-
-
-            }
-        });
-    });
-});
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const menuToggle = document.getElementById('menu-toggle');
-        const navbarMenuContainer = document.querySelector('.navbar-menu-container');
-        const socialMediaContainer = document.querySelector('.social-media-container');
-
-        menuToggle.addEventListener('click', function () {
-            navbarMenuContainer.classList.toggle('active');
-            socialMediaContainer.classList.toggle('active');
-
-        });
-
-        if (window.anime) {
-            anime({
-                targets: '#greetingText',
-                opacity: [0, 1],
-                translateY: [-10, 0],
-                duration: 800,
-                easing: 'easeOutQuad'
-            });
-        }
-    });
-
-});
-
+// Cleaned and modularized JavaScript
 
 document.addEventListener('DOMContentLoaded', function () {
+    // Only one card active at a time across all sections
+    document.querySelectorAll('.design-card').forEach(card => {
+        card.addEventListener('click', function () {
+            document.querySelectorAll('.design-card').forEach(c => c.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
+    // Mobile menu toggle
     const menuToggle = document.getElementById('menu-toggle');
     const navbarMenuContainer = document.querySelector('.navbar-menu-container');
     const socialMediaContainer = document.querySelector('.social-media-container');
+    if (menuToggle && navbarMenuContainer && socialMediaContainer) {
+        menuToggle.addEventListener('click', function () {
+            navbarMenuContainer.classList.toggle('active');
+            socialMediaContainer.classList.toggle('active');
+        });
+    }
 
-    menuToggle.addEventListener('click', function () {
-        navbarMenuContainer.classList.toggle('active');
-        socialMediaContainer.classList.toggle('active');
+    // Scroll spy for active nav link
+    const navLinks = document.querySelectorAll('.navbar-menu li a');
+    const sections = Array.from(navLinks).map(link => document.querySelector(link.getAttribute('href')));
+
+    // Improved scroll spy for active nav link
+    function improvedSetActiveLink() {
+        let closestIndex = 0;
+        let minDistance = Infinity;
+        sections.forEach((section, i) => {
+            if (!section) return;
+            const rect = section.getBoundingClientRect();
+            const distance = Math.abs(rect.top - 80); // 80px offset for header
+            if (rect.top <= 100 && distance < minDistance) {
+                minDistance = distance;
+                closestIndex = i;
+            }
+        });
+        navLinks.forEach((link, i) => {
+            if (i === closestIndex) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+    window.addEventListener('scroll', improvedSetActiveLink);
+    improvedSetActiveLink(); // Initial call
+    // Also update on click for instant feedback
+    navLinks.forEach((link, i) => {
+        link.addEventListener('click', function() {
+            navLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        });
     });
 
+    // Greeting animation
     if (window.anime) {
         const greetingText = document.getElementById('greetingText');
         const greetings = [
@@ -96,93 +77,34 @@ document.addEventListener('DOMContentLoaded', function () {
             'ابق آمناً من الخطر السيبراني',
             'Hãy an toàn khỏi mối đe dọa mạng'
         ];
-
         let greetIndex = 0;
-
-
         function animateGreeting(text) {
             greetingText.innerHTML = '';
-            text.split(' ').forEach((word, i) => {
+            const words = text.split(' ');
+            words.forEach((word, i) => {
                 const span = document.createElement('span');
                 span.className = 'greet-word';
                 span.textContent = word;
                 greetingText.appendChild(span);
-                if (i < text.split(' ').length - 1) {
+                if (i < words.length - 1) {
                     greetingText.appendChild(document.createTextNode(' '));
                 }
             });
-
             anime({
                 targets: '#greetingText span',
                 opacity: [0, 1],
-                translateY: [
-                    { value: '-2.75rem', easing: 'easeOutExpo', duration: 600 },
-                    { value: 0, easing: 'easeOutBounce', duration: 800, delay: 100 }
-                ],
-                rotate: {
-                    value: '-1turn',
-                    delay: 0
+                translateX: function(el, i) {
+                    return i % 2 === 0 ? ['-2.5em', '0em'] : ['2.5em', '0em'];
                 },
-                delay: (_, i) => i * 50,
-                easing: 'easeInOutCirc',
+                duration: 800,
+                delay: (_, i) => i * 100,
+                easing: 'easeOutExpo',
                 complete: () => {
                     greetIndex = (greetIndex + 1) % greetings.length;
-                    setTimeout(() => animateGreeting(greetings[greetIndex]), 1000);
+                    setTimeout(() => animateGreeting(greetings[greetIndex]), 2000);
                 }
             });
         }
-
         animateGreeting(greetings[greetIndex]);
-
-    if (window.anime) {
-        const greetingText = document.getElementById('greetingText');
-        const greetings = [
-            'Stay safe from cyber',
-            'साइबर से सुरक्षित रहें',
-            'সাইবার থেকে নিরাপদ থাকুন',
-            'サイバーから安全に過ごしてください',
-            'Restez en sécurité contre le cyber',
-            'Mantente seguro del ciber',
-            '保持网络安全',
-            'Bleib sicher vor Cybergefahren',
-            'சைபர் ஆபத்திலிருந்து பாதுகாப்பாக இருங்கள்',
-            'Fanacht sábháilte ón gcibear',
-            'Manténgase seguro del ciber',
-            'Bleiben Sie sicher vor Cyber',
-            'Stai al sicuro dal cyber',
-            'שמור על עצמך בטוח מפני סייבר',
-            'Оставайтесь в безопасности от киберугроз',
-            'ابق آمناً من الخطر السيبراني',
-            'Hãy an toàn khỏi mối đe dọa mạng'
-        ];
-
-        anime({
-            targets: greetingText,
-            opacity: [0, 1],
-            translateY: [-10, 0],
-            duration: 800,
-            easing: 'easeOutQuad'
-        });
-
-        let greetIndex = 1;
-        setInterval(() => {
-            anime({
-                targets: greetingText,
-                opacity: [1, 0],
-                duration: 500,
-                easing: 'easeInQuad',
-                complete: function () {
-                    greetingText.textContent = greetings[greetIndex];
-                    anime({
-                        targets: greetingText,
-                        opacity: [0, 1],
-                        duration: 500,
-                        easing: 'easeOutQuad'
-                    });
-                    greetIndex = (greetIndex + 1) % greetings.length;
-                }
-            });
-        }, 5000);
-
     }
 });

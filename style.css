@@ -11,6 +11,25 @@
   display: none;
 }
 
+@font-face {
+  font-family: 'CyberAlert';
+  src: url('assets/fonts/CyberAlert.woff') format('woff'),
+       url('assets/fonts/CyberAlert.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#greetingText {
+  font-family: 'CyberAlert', 'Montserrat', 'Roboto', sans-serif;
+  display: inline-block;
+  width: 420px;
+  min-height: 2.5em;
+  text-align: center;
+  white-space: nowrap;
+  transition: width 0.3s;
+  flex-shrink: 0;
+}
+
 #greetingText .greet-word {
   display: inline-block;
   opacity: 0;
@@ -127,6 +146,7 @@ button.normal:hover {
 body {
   width: 100%;
   background-color: #2d2e32;
+  font-family: 'CyberAlert', sans-serif;
 }
 
 body::selection {
@@ -220,6 +240,11 @@ body::selection {
   font-weight: 900;
 }
 
+.navbar-menu li a.active {
+  color: #64f4ac;
+  font-weight: bold;
+}
+
 .social-media {
   display: flex;
   align-items: center;
@@ -273,13 +298,20 @@ body::selection {
 #aboutme {
   display: flex;
   background-color: #25262a;
-  height: 90vh;
   align-content: center;
   align-items: center;
   justify-content: space-around;
-  padding: 100px 0 0 100px;
-  margin-bottom: 10vh;
-  max-height: 100vh;
+  padding: 80px 0 80px 100px;
+  margin-bottom: 0;
+  height: auto;
+  max-height: none;
+}
+
+/* Research section custom spacing */
+#research {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 80px;
 }
 
 .developer-intro {
@@ -315,7 +347,7 @@ body::selection {
 .body-title p {
   font-size: 13px;
   padding: 20px 0;
-  color: #cacaca;
+  color: #e0e0e0;
   font-weight: 500;
   line-height: 25px;
 }
@@ -461,15 +493,6 @@ body::selection {
 .design-card:hover {
   box-shadow: 0 0 15px #00000080;
   cursor: pointer;
-}
-
-.design-card.active {
-  background-color: #00b840;
-}
-
-.design-card.active p {
-  color: #000000;
-  font-weight: 700;
 }
 
 .design-card div {
@@ -792,140 +815,113 @@ body::selection {
 
 /* Mobile devices */
 @media (max-width: 768px) {
-  @media (max-width: 768px) {
-    #header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .menu-toggle {
-      display: block;
-      background: none;
-      border: none;
-      font-size: 24px;
-      color: #fff;
-      cursor: pointer;
-      margin-left: auto;
-    }
-  
-    .navbar-menu-container {
-      display: none;
-      width: 100%;
-    }
-  
-    .navbar-menu {
-      flex-direction: column;
-      width: 100%;
-      text-align: left;
-    }
-  
-    .navbar-menu li {
-      padding: 10px 0;
-    }
-  
-    .navbar-menu li a {
-      font-size: 18px;
-      padding: 10px 20px;
-      display: block;
-      width: 100%;
-    }
-  
-    .social-media-container {
-      display: none;
-      width: 100%;
-    }
-  
-    .social-media {
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .social-media li {
-      padding: 10px 0;
-    }
-  
-    .social-media li a {
-      font-size: 18px;
-      padding: 10px 20px;
-      display: block;
-      width: 100%;
-    }
-  
-    #content-body,
-    #aboutme,
-    #introduction,
-    #skill {
-      padding: 20px 10px;
-      flex-direction: column;
-    }
-  
-    .cards-container,
-    .image-container {
-      width: 100%;
-      padding: 0;
-    }
-  
-    .design-card {
-      max-width: 100%;
-      margin: 10px 0;
-    }
-  
-  
-  
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  .navbar-menu-container {
+    display: none;
+    width: 100%;
+  }
+  .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+  }
+  .navbar-menu li {
+    padding: 10px 0;
+  }
+  .navbar-menu li a {
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+  }
+  .social-media-container {
+    display: none;
+    width: 100%;
+  }
+  .social-media {
+    flex-direction: column;
+    width: 100%;
+  }
+  .social-media li {
+    padding: 10px 0;
+  }
+  .social-media li a {
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+  }
+  #content-body,
+  #aboutme,
+  #introduction,
+  #skill {
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+  .cards-container,
+  .image-container {
+    width: 100%;
+    padding: 0;
+  }
+  .design-card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
   /* Mobile menu active state */
   .navbar-menu-container.active,
   .social-media-container.active {
     display: flex;
   }
-
   .navbar-title,
   .navbar-menu,
   .social-media {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .navbar-menu li,
   .social-media li {
     padding: 10px 0;
   }
-
   .navbar-menu li a,
   .social-media li a {
     font-size: 14px;
   }
-
   h1 {
     font-size: 30px;
     line-height: 40px;
   }
-
   h2 {
     font-size: 24px;
     line-height: 32px;
   }
-
   h4 {
     font-size: 16px;
   }
-
   h6 {
     font-size: 10px;
   }
-
   p {
     font-size: 12px;
   }
-
   .section-p1 {
     padding: 20px 20px;
   }
-
   button.normal {
     font-size: 12px;
     padding: 10px 20px;
   }
-
   #content-body,
   #aboutme {
     flex-direction: column;
@@ -933,39 +929,149 @@ body::selection {
     height: auto;
     max-height: none;
   }
-
   .developer-intro p {
     font-size: 12px;
   }
-
   .body-title h1 {
     font-size: 24px;
     line-height: 32px;
   }
-
   .body-title p {
     font-size: 12px;
   }
-
   .cards-container,
   .image-container {
     width: 100%;
     padding: 0;
   }
-
   #footer {
     flex-direction: column;
     padding: 30px 20px;
     height: auto;
   }
-
   .footer-left,
   .footer-right {
     width: 100%;
   }
-
   .email-form {
     width: 100%;
     padding: 20px 10%;
   }
+}
+
+.developer-intro, .body-title {
+  align-items: center;
+  justify-content: center;
+}
+
+.message-label {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #greetingText {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+section#research,
+section#introduction,
+section#skill {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Headings */
+h1, h2, h3, .section-heading {
+  font-family: 'Montserrat', 'CyberAlert', sans-serif;
+}
+
+/* Body text */
+body, p, li, a {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+}
+
+/* Accent/Cyber/Highlight */
+.accent, .cyber, .highlight {
+  font-family: 'Orbitron', 'Montserrat', sans-serif;
+}
+
+/* Creative & Techy Font Classes */
+.techy {
+  font-family: 'Share Tech Mono', 'Orbitron', monospace;
+}
+.creative {
+  font-family: 'Audiowide', 'Montserrat', sans-serif;
+}
+.retro {
+  font-family: 'VT323', monospace;
+}
+.pixel {
+  font-family: 'Press Start 2P', monospace;
+}
+.impact {
+  font-family: 'Russo One', 'Montserrat', sans-serif;
+}
+
+/* Example usage for headings */
+h2.retro-title {
+  font-family: 'VT323', monospace;
+}
+h2.pixel-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.2em;
+}
+h2.impact-title {
+  font-family: 'Russo One', 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Keep CyberAlert for greetings */
+#greetingText {
+  font-family: 'CyberAlert', 'Montserrat', 'Roboto', sans-serif;
+  display: inline-block;
+  width: 420px;
+  min-height: 2.5em;
+  text-align: center;
+  white-space: nowrap;
+  transition: width 0.3s;
+  flex-shrink: 0;
+}
+
+#greetingText, #greetingText * {
+  font-family: 'CyberAlert', 'Montserrat', 'Roboto', sans-serif !important;
+}
+
+/* Move these to the end for maximum specificity */
+.techy-title {
+  font-family: 'Share Tech Mono', 'Orbitron', monospace !important;
+  letter-spacing: 2px;
+}
+.creative-title {
+  font-family: 'Audiowide', 'Montserrat', sans-serif !important;
+  letter-spacing: 1px;
+}
+
+/* Strong active card styling for maximum specificity */
+.design-card.active {
+  background-color: #64f4ac !important;
+  color: #fff !important;
+  box-shadow: 0 4px 24px 0 rgba(100, 244, 172, 0.2) !important;
+  border: 2px solid #00b840 !important;
+}
+.design-card.active h3,
+.design-card.active p,
+.design-card.active a,
+.design-card.active i {
+  color: #fff !important;
 }

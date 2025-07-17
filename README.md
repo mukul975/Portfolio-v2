@@ -56,19 +56,14 @@ To get a local copy of this project up and running on your machine, follow these
 
 1. **Clone the repository:**
    
-
    git clone https://github.com/mukul975/Portfolio-v2.git
 
+2. **Navigate to the project directory:**
+   
+   cd Portfolio-v2
 
-3. **Navigate to the project directory:**
-
-  
-   cd portfolio
-  
-
-5. **Open the index.html file in your web browser:**
-
-    
+3. **Open the index.html file in your web browser:**
+   
    open index.html
 
 ## Usage
@@ -94,6 +89,12 @@ The website is structured into several sections:
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, please submit a pull request or open an issue.
+
+### Contribution Guidelines
+- Fork the repository and create your branch from `main`.
+- Describe your changes clearly in the pull request.
+- Ensure your code follows the existing style and passes any checks.
+- For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
