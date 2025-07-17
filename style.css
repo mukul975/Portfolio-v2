@@ -314,6 +314,49 @@ body::selection {
   padding-bottom: 80px;
 }
 
+#research > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 40px 80px 40px !important;
+  min-height: 95vh;
+  width: 100vw;
+  box-sizing: border-box;
+  position: relative;
+}
+#research .cards-container,
+#research .image-container {
+  width: 50%;
+}
+#research .cards-container {
+  padding-left: 0;
+  padding-right: 20px;
+}
+#research .image-container {
+  padding-left: 20px;
+}
+#research .svg-animation {
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+}
+@media (max-width: 900px) {
+  #research > div {
+    flex-direction: column;
+    padding: 40px 10px 20px 10px !important;
+    min-height: unset;
+  }
+  #research .cards-container,
+  #research .image-container {
+    width: 100%;
+    padding: 0;
+  }
+  #research .cards-container {
+    align-items: center;
+  }
+}
+
 .developer-intro {
   display: flex;
   align-items: center;
@@ -1074,4 +1117,26 @@ h2.impact-title {
 .design-card.active a,
 .design-card.active i {
   color: #fff !important;
+}
+
+#introduction .cards-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc((150px * 3) + (20px * 2)); /* 3 cards + 2 gaps */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#introduction .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#introduction .design-card {
+  min-height: 150px;
+}
+@media (max-width: 1100px) {
+  #introduction .cards-container {
+    max-height: calc((150px * 3) + (20px * 2));
+  }
 }
