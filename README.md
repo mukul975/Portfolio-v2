@@ -108,6 +108,15 @@ LinkedIn: [Mahipal](https://www.linkedin.com/in/mahipal975/)
 GitHub: [mukul975](https://github.com/mukul975)  
 
 ---
+## Star History
+
+<a href="https://www.star-history.com/#mukul975/Portfolio-v2&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mukul975/Portfolio-v2&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mukul975/Portfolio-v2&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=mukul975/Portfolio-v2&type=Date" />
+ </picture>
+</a>
 
 Thank you for visiting the portfolio website. If you like the design, please follow and share!
 
