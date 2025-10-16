@@ -7,6 +7,18 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
+
+/* Prevent horizontal overflow on all elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Ensure containers don't overflow */
+.container, section, div {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
 .menu-toggle {
   display: none;
 }
@@ -1019,6 +1031,31 @@ body::selection {
     max-width: 100%;
     min-width: 0;
   }
+  
+  .background-circle {
+    width: 90vw;
+    height: 90vw;
+    max-width: 350px;
+    max-height: 350px;
+  }
+  
+  .svg-animation {
+    max-width: 90%;
+  }
+  
+  #introduction,
+  #skill,
+  #research {
+    padding: 20px 15px;
+  }
+  
+  .design-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+  }
 }
 
 body, html {
@@ -1026,6 +1063,49 @@ body, html {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+}
+
+/* Additional mobile fixes for very small screens */
+@media (max-width: 480px) {
+  #greetingText {
+    width: 95%;
+    font-size: 0.9em;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  
+  .background-circle {
+    width: 85vw;
+    height: 85vw;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  
+  .body-title h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .developer-intro p {
+    font-size: 11px;
+    margin: 0 10px 0 0;
+    padding: 4px 8px;
+  }
+  
+  #introduction,
+  #skill,
+  #research {
+    padding: 15px 10px;
+  }
+  
+  .cards-container {
+    padding: 0 5px;
+  }
+  
+  .design-card {
+    padding: 12px;
+    margin: 8px 0;
+  }
 }
 
 section#research,
