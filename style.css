@@ -1204,7 +1204,7 @@ h2.impact-title {
 #introduction .cards-container {
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: calc((150px * 3) + (20px * 2)); /* 3 cards + 2 gaps */
+  max-height: calc((150px * 4) + (20px * 3)); /* 4 cards + 3 gaps */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1217,6 +1217,6 @@ h2.impact-title {
 }
 @media (max-width: 1100px) {
   #introduction .cards-container {
-    max-height: calc((150px * 3) + (20px * 2));
+    max-height: calc((150px * 4) + (20px * 3));
   }
 }
