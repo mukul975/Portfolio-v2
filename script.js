@@ -48,6 +48,18 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', improvedSetActiveLink);
     improvedSetActiveLink(); // Initial call
     // Also update on click for instant feedback
+
+    // Scroll to top button functionality
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    if (scrollToTopBtn) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+    }
     navLinks.forEach((link, i) => {
         link.addEventListener('click', function() {
             navLinks.forEach(l => l.classList.remove('active'));
@@ -108,3 +120,11 @@ document.addEventListener('DOMContentLoaded', function () {
         animateGreeting(greetings[greetIndex]);
     }
 });
+
+// Scroll to top function
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
