@@ -383,49 +383,7 @@ body::selection {
   position: relative;
 }
 
-/* Research section enhancements */
-.research-highlight {
-  background: linear-gradient(45deg, #00b840, #00ff55);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: researchGlow 3s ease-in-out infinite alternate;
-}
-
-@keyframes researchGlow {
-  0% { filter: drop-shadow(0 0 5px #00b840); }
-  100% { filter: drop-shadow(0 0 15px #00ff55); }
-}
-
-.research-subtitle {
-  margin-bottom: 20px !important;
-  font-size: 18px;
-  color: #b8b8b8;
-}
-
-.research-stats {
-  display: flex;
-  gap: 20px;
-  margin-top: 15px;
-  flex-wrap: wrap;
-}
-
-.stat-item {
-  background: rgba(0, 184, 64, 0.1);
-  border: 1px solid #00b840;
-  padding: 8px 16px;
-  border-radius: 20px;
-  color: #00ff55;
-  font-size: 14px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.stat-item:hover {
-  background: rgba(0, 184, 64, 0.2);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 184, 64, 0.3);
-}
+/* Removed enhanced research styles to restore the previous simple design */
 
 #research > div {
   display: flex;
