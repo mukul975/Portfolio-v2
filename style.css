@@ -1632,3 +1632,44 @@ html {
   margin-top: -60px;
   pointer-events: none;
 }
+
+/* ── Strategy recommendations ── */
+
+/* Section heading glow */
+.section-heading.techy-title {
+  text-shadow: 0 0 10px rgba(100, 244, 172, 0.3), 0 0 20px rgba(100, 244, 172, 0.1);
+}
+
+/* Card hover: slide right + left accent border */
+.design-card:hover {
+  border-left: 3px solid #64f4ac;
+  transform: translateX(4px);
+}
+
+/* Section gradient dividers */
+section + section::before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #64f4ac40, transparent);
+  margin: 0 10%;
+}
+
+/* Dark-themed contact form inputs */
+.email-form input,
+.email-form textarea {
+  background-color: #1a1b1e;
+  color: #fefefe;
+  border: 1px solid #3d3e42;
+}
+.email-form input:focus,
+.email-form textarea:focus {
+  outline: none;
+  border-color: #64f4ac;
+  box-shadow: 0 0 6px rgba(100, 244, 172, 0.3);
+}
+
+/* Improved card text contrast (WCAG AA: 4.5:1) */
+.design-card p {
+  color: #c0c1c5;
+}
