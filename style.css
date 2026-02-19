@@ -559,7 +559,6 @@ body::selection {
 #research {
   margin-top: 0;
   padding-top: 0;
-  padding-bottom: 80px;
   position: relative;
 }
 
@@ -571,7 +570,6 @@ body::selection {
   justify-content: space-between;
   align-items: center;
   padding: 100px 40px 80px 40px;
-  min-height: 95vh;
   width: 100%;
   box-sizing: border-box;
   position: relative;
