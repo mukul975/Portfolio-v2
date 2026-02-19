@@ -109,6 +109,146 @@ html {
   50% { opacity: 0.7; }
 }
 
+/* ---------- RESEARCH SECTION ---------- */
+.research-links-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.research-profile-link {
+  font-size: 14px;
+  color: #64f4ac;
+  font-weight: 600;
+  font-family: 'Share Tech Mono', monospace;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s;
+}
+
+.research-profile-link:hover {
+  opacity: 0.75;
+}
+
+.research-cards-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.research-card {
+  flex: 1 1 340px;
+  max-width: 520px;
+}
+
+.research-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.publisher-badge {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.springer-badge {
+  background: rgba(210, 0, 0, 0.15);
+  border: 1px solid rgba(210, 0, 0, 0.4);
+  color: #ff6b6b;
+}
+
+.ist-badge {
+  background: rgba(100, 244, 172, 0.1);
+  border: 1px solid rgba(100, 244, 172, 0.35);
+  color: #64f4ac;
+}
+
+.research-year {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  color: #a0a1a5;
+}
+
+.research-finding {
+  background: rgba(100, 244, 172, 0.05);
+  border-left: 3px solid #64f4ac;
+  padding: 10px 14px;
+  margin: 12px 0;
+  font-size: 14px;
+  color: #cacaca;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.research-finding i {
+  color: #64f4ac;
+  margin-right: 6px;
+}
+
+/* ---------- MCP TOOLS SECTION ---------- */
+.mcp-explainer {
+  max-width: 780px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.mcp-explainer p {
+  color: #cacaca;
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 28px;
+}
+
+.mcp-badges {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mcp-badges span {
+  background: rgba(100, 244, 172, 0.08);
+  border: 1px solid rgba(100, 244, 172, 0.35);
+  color: #64f4ac;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+.mcp-cards-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.mcp-card {
+  flex: 1 1 280px;
+  max-width: 360px;
+}
+
+.mcp-card-meta {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  color: #64f4ac;
+  margin-bottom: 10px;
+  display: block;
+}
+
 /* Scroll to top button */
 .scroll-to-top {
   position: fixed;
@@ -395,13 +535,21 @@ body::selection {
 #aboutme {
   display: flex;
   background-color: #25262a;
-  align-content: center;
   align-items: center;
   justify-content: space-around;
-  padding: 80px 0 80px 100px;
+  padding: 80px 60px;
   margin-bottom: 0;
-  height: auto;
-  max-height: none;
+  min-height: 85vh;
+  gap: 40px;
+}
+
+#aboutme .body-part-2 {
+  flex: 0 0 320px;
+}
+
+#aboutme .body-part-1 {
+  flex: 1 1 auto;
+  max-width: 580px;
 }
 
 /* Research section custom spacing */
@@ -497,6 +645,46 @@ body::selection {
   line-height: 25px;
 }
 
+.about-tagline {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #fefefe !important;
+  line-height: 1.4 !important;
+  padding: 12px 0 6px !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-subtitle {
+  font-size: 13px !important;
+  color: #64f4ac !important;
+  font-weight: 500 !important;
+  padding: 0 0 10px !important;
+  line-height: 1.6 !important;
+}
+
+#aboutme .body-title p:not(.about-tagline):not(.about-subtitle) {
+  padding: 6px 0 !important;
+  font-size: 12.5px !important;
+  line-height: 1.7 !important;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 0 0;
+}
+
+.about-tags span {
+  background: rgba(100, 244, 172, 0.07);
+  border: 1px solid rgba(100, 244, 172, 0.25);
+  color: #a0a1a5;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
 .body-title a {
   font-size: 16px;
   color: #64f4ac;
@@ -505,10 +693,31 @@ body::selection {
   margin: 20px 0;
 }
 
+.hero-ctas {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.cta-secondary {
+  font-size: 15px;
+  color: #a0a1a5;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 20px 0;
+  margin: 20px 0;
+  transition: color 0.2s;
+}
+
+.cta-secondary:hover {
+  color: #64f4ac;
+}
+
 .body-tail {
   display: flex;
   align-items: start;
-  padding: 100px 0 0 0;
+  padding: 40px 0 0 0;
 }
 
 .body-tail p {
@@ -1170,6 +1379,20 @@ body::selection {
     width: 100%;
     padding: 20px 10%;
   }
+  .research-cards-container,
+  .mcp-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .research-card,
+  .mcp-card {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .mcp-badges {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .developer-intro, .body-title {
@@ -1281,11 +1504,17 @@ body {
     padding: 12px;
     margin: 8px 0;
   }
+  .research-links-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
 }
 
 section#research,
 section#introduction,
-section#skill {
+section#skill,
+section#mcp-tools {
   width: 100%;
   position: relative;
   box-sizing: border-box;
