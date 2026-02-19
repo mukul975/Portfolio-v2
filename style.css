@@ -140,6 +140,7 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 0;
+  width: 100%;
 }
 
 .research-card {
@@ -234,6 +235,7 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 0;
+  width: 100%;
 }
 
 .mcp-card {
@@ -550,6 +552,7 @@ body::selection {
 #aboutme .body-part-1 {
   flex: 1 1 auto;
   max-width: 580px;
+  min-width: 0;
 }
 
 /* Research section custom spacing */
@@ -673,6 +676,7 @@ body::selection {
   flex-wrap: wrap;
   gap: 8px;
   padding: 12px 0 0;
+  width: 100%;
 }
 
 .about-tags span {
