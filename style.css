@@ -251,6 +251,137 @@ html {
   display: block;
 }
 
+/* ---------- CYBERSECURITY SKILLS SECTION ---------- */
+.cyber-attck-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 100, 100, 0.08);
+  border: 1px solid rgba(255, 100, 100, 0.3);
+  color: #ff8080;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  padding: 5px 14px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.cyber-skills-stats {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 28px 0 8px;
+}
+
+.cyber-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.cyber-stat-number {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #64f4ac;
+  line-height: 1;
+}
+
+.cyber-stat-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  color: #a0a1a5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cyber-skills-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  gap: 14px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px 0 32px;
+}
+
+.cyber-cat-card {
+  background: rgba(100, 244, 172, 0.04);
+  border: 1px solid rgba(100, 244, 172, 0.15);
+  border-radius: 8px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.2s ease;
+  cursor: default;
+}
+
+.cyber-cat-card:hover {
+  background: rgba(100, 244, 172, 0.09);
+  border-color: rgba(100, 244, 172, 0.45);
+  transform: translateY(-2px);
+}
+
+.cyber-cat-card i {
+  font-size: 22px;
+  color: #64f4ac;
+}
+
+.cyber-cat-card h4 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 13px;
+  color: #e8e9eb;
+  margin: 0;
+  font-weight: 600;
+}
+
+.cyber-cat-card span {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  color: #6c6d71;
+}
+
+.cyber-platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 0 36px;
+}
+
+.cyber-platforms span {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #8a8b8f;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  padding: 5px 13px;
+  border-radius: 4px;
+}
+
+.cyber-skills-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(100, 244, 172, 0.1);
+  border: 1px solid rgba(100, 244, 172, 0.4);
+  color: #64f4ac;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 15px;
+  padding: 13px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.cyber-skills-cta:hover {
+  background: rgba(100, 244, 172, 0.18);
+  border-color: #64f4ac;
+}
+
 /* Scroll to top button */
 .scroll-to-top {
   position: fixed;
@@ -1395,6 +1526,16 @@ body::selection {
     flex-direction: column;
     align-items: center;
   }
+  .cyber-skills-categories {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  .cyber-stat-number {
+    font-size: 28px;
+  }
+  .cyber-skills-stats {
+    gap: 24px;
+  }
 }
 
 .developer-intro, .body-title {
@@ -1510,6 +1651,13 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 12px;
+  }
+  .cyber-skills-categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cyber-skills-cta {
+    font-size: 13px;
+    padding: 11px 20px;
   }
 }
 

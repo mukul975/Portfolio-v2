@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4G5DVR6FCK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4G5DVR6FCK');
+  </script>
+  <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "lb9967r49a");
+  </script>
+  <title>Anthropic Cybersecurity Skills — 734+ AI Agent Skills | Mahipal</title>
+  <meta name="description" content="734+ structured cybersecurity skills for AI agents. MITRE ATT&CK mapped. Works with Claude Code, GitHub Copilot, Cursor, Gemini CLI and 26+ platforms. Open source, Apache 2.0.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.mahipal.engineer/cyber-skills">
+  <meta property="og:title" content="Anthropic Cybersecurity Skills — 734+ AI Agent Skills">
+  <meta property="og:description" content="The largest open-source collection of cybersecurity skills for AI agents. MITRE ATT&CK mapped. Claude Code, GitHub Copilot, Cursor, Gemini CLI and 26+ platforms.">
+  <meta property="og:image" content="https://www.mahipal.engineer/assets/Mockup.png">
+  <meta property="og:url" content="https://www.mahipal.engineer/cyber-skills">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Anthropic Cybersecurity Skills — 734+ AI Agent Skills">
+  <meta name="twitter:description" content="734+ structured cybersecurity skills for AI agents. MITRE ATT&CK mapped.">
+  <meta name="twitter:image" content="https://www.mahipal.engineer/assets/Mockup.png">
+  <link rel="icon" href="/assets/cyber.svg" type="image/svg+xml">
+  <script defer src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.clarity.ms">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500;700&family=Orbitron:wght@400;700&family=Share+Tech+Mono&family=Audiowide&family=Raleway:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Anthropic Cybersecurity Skills",
+    "codeRepository": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "programmingLanguage": "Python",
+    "license": "https://www.apache.org/licenses/LICENSE-2.0",
+    "author": {
+      "@type": "Person",
+      "name": "Mahipal Jangra",
+      "url": "https://www.mahipal.engineer/"
+    },
+    "description": "734+ structured cybersecurity skills for AI agents. MITRE ATT&CK mapped, agentskills.io standard. Compatible with Claude Code, GitHub Copilot, Cursor, Gemini CLI and 26+ platforms."
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg-darkest: #0d0e11;
+      --bg-dark: #13141a;
+      --bg-mid: #1a1b21;
+      --bg-card: #1e1f27;
+      --bg-card-hover: #242530;
+      --accent: #64f4ac;
+      --accent-dim: rgba(100,244,172,0.12);
+      --accent-border: rgba(100,244,172,0.22);
+      --red: #ff6b6b;
+      --red-dim: rgba(255,107,107,0.1);
+      --red-border: rgba(255,107,107,0.3);
+      --text-primary: #e8e9eb;
+      --text-secondary: #b0b1b5;
+      --text-muted: #6c6d74;
+      --font-mono: 'Share Tech Mono', monospace;
+      --font-display: 'Orbitron', sans-serif;
+      --font-body: 'Raleway', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg-darkest); color: var(--text-primary); font-family: var(--font-body); min-height: 100vh; overflow-x: hidden; }
+
+    /* GLOW PULSE KEYFRAME */
+    @keyframes glowPulse {
+      0%, 100% { box-shadow: 0 0 8px rgba(100,244,172,0.15), 0 0 20px rgba(100,244,172,0.05); border-color: rgba(100,244,172,0.22); }
+      50% { box-shadow: 0 0 16px rgba(100,244,172,0.35), 0 0 40px rgba(100,244,172,0.12); border-color: rgba(100,244,172,0.5); }
+    }
+
+    /* NAV — glass-morphism */
+    .cs-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(13,14,17,0.78);
+      -webkit-backdrop-filter: blur(20px) saturate(1.4);
+      backdrop-filter: blur(20px) saturate(1.4);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 40px; height: 64px;
+      transition: background 0.3s;
+    }
+    .cs-nav-left { display: flex; align-items: center; gap: 16px; }
+    .cs-nav-logo { font-family: var(--font-display); font-size: 16px; color: var(--accent); text-decoration: none; letter-spacing: 1px; }
+    .cs-nav-badge {
+      font-family: var(--font-mono); font-size: 11px;
+      background: var(--red-dim); border: 1px solid var(--red-border);
+      color: var(--red); padding: 3px 10px; border-radius: 3px;
+    }
+    .cs-nav-links { display: flex; align-items: center; gap: 24px; list-style: none; }
+    .cs-nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+    .cs-nav-links a:hover { color: var(--accent); }
+    .cs-nav-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent-dim); border: 1px solid var(--accent-border);
+      color: var(--accent); font-family: var(--font-mono); font-size: 13px;
+      padding: 8px 18px; border-radius: 5px; text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .cs-nav-cta:hover { background: rgba(100,244,172,0.2); border-color: var(--accent); }
+
+    /* HERO — with dot-grid background pattern */
+    .cs-hero {
+      background: var(--bg-darkest);
+      background-image:
+        radial-gradient(circle 1px at center, rgba(100,244,172,0.12) 0%, transparent 1px),
+        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(100,244,172,0.08) 0%, transparent 70%);
+      background-size: 24px 24px, 100% 100%;
+      background-position: 0 0, 0 0;
+      padding: 100px 40px 80px; text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      position: relative;
+    }
+    .cs-hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--font-mono); font-size: 12px;
+      color: var(--red); background: var(--red-dim);
+      border: 1px solid var(--red-border);
+      padding: 5px 14px; border-radius: 4px; margin-bottom: 28px;
+    }
+    .cs-hero-title {
+      font-family: var(--font-display); font-size: clamp(32px, 6vw, 68px);
+      font-weight: 700; color: #fff; line-height: 1.1;
+      letter-spacing: -1px; margin-bottom: 20px;
+    }
+    .cs-hero-title span { color: var(--accent); }
+    .cs-hero-sub {
+      font-size: 18px; color: var(--text-secondary); max-width: 620px;
+      margin: 0 auto 48px; line-height: 1.7; font-weight: 400;
+    }
+
+    /* INSTALL TABS — with glow pulse */
+    .cs-install-box {
+      max-width: 680px; margin: 0 auto 60px;
+      background: var(--bg-card); border: 1px solid var(--accent-border);
+      border-radius: 12px; overflow: hidden;
+      animation: glowPulse 3s ease-in-out infinite;
+    }
+    .cs-tab-bar {
+      display: flex; background: var(--bg-mid);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .cs-tab-btn {
+      flex: 1; padding: 12px 16px; background: none; border: none; cursor: pointer;
+      font-family: var(--font-mono); font-size: 12px; color: var(--text-muted);
+      transition: color 0.2s, background 0.2s; border-bottom: 2px solid transparent;
+    }
+    .cs-tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); background: rgba(100,244,172,0.04); }
+    .cs-tab-btn:hover:not(.active) { color: var(--text-primary); }
+    .cs-tab-panel { display: none; padding: 20px 24px; }
+    .cs-tab-panel.active { display: block; }
+    .cs-cmd-row { display: flex; align-items: center; gap: 12px; }
+    .cs-cmd-row code {
+      flex: 1; font-family: var(--font-mono); font-size: 14px;
+      color: var(--accent); background: none; word-break: break-all;
+    }
+    .cs-copy-btn {
+      flex-shrink: 0; background: none; border: 1px solid rgba(255,255,255,0.12);
+      color: var(--text-muted); font-family: var(--font-mono); font-size: 11px;
+      padding: 6px 14px; border-radius: 4px; cursor: pointer; transition: all 0.2s;
+    }
+    .cs-copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .cs-copy-btn.copied { border-color: var(--accent); color: var(--accent); }
+    .cs-tab-note { font-size: 12px; color: var(--text-muted); margin-top: 10px; }
+    .cs-tab-note a { color: var(--accent); text-decoration: none; }
+
+    /* STATS */
+    .cs-stats-bar {
+      display: flex; justify-content: center; gap: 0; flex-wrap: wrap;
+      max-width: 800px; margin: 0 auto;
+    }
+    .cs-stat-item {
+      flex: 1; min-width: 160px; padding: 24px 20px; text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.07);
+    }
+    .cs-stat-item:last-child { border-right: none; }
+    .cs-stat-num { font-family: var(--font-display); font-size: 42px; font-weight: 700; color: var(--accent); line-height: 1; display: block; }
+    .cs-stat-lbl { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; display: block; margin-top: 6px; }
+
+    /* SECTIONS */
+    .cs-section { padding: 80px 40px; max-width: 1200px; margin: 0 auto; }
+    .cs-section-header { text-align: center; margin-bottom: 52px; }
+    .cs-section-tag { font-family: var(--font-mono); font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 12px; }
+    .cs-section-title { font-family: var(--font-display); font-size: clamp(24px, 4vw, 38px); font-weight: 700; color: #fff; margin-bottom: 14px; }
+    .cs-section-sub { font-size: 16px; color: var(--text-secondary); max-width: 560px; margin: 0 auto; line-height: 1.7; }
+
+    /* CATEGORIES */
+    .cs-cats-wrap { background: var(--bg-dark); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .cs-cats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .cs-cat-card {
+      background: var(--bg-card); border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 10px; padding: 22px 18px;
+      display: flex; flex-direction: column; gap: 10px;
+      transition: border-color 0.25s, background 0.25s, transform 0.2s;
+    }
+    .cs-cat-card:hover { background: var(--bg-card-hover); border-color: var(--accent-border); transform: translateY(-3px); }
+    .cs-cat-icon { font-size: 24px; color: var(--accent); }
+    .cs-cat-name { font-family: var(--font-mono); font-size: 13px; color: var(--text-primary); font-weight: 600; }
+    .cs-cat-count { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); }
+    .cs-cat-bar { height: 2px; background: rgba(255,255,255,0.06); border-radius: 2px; margin-top: 4px; }
+    .cs-cat-bar-fill { height: 100%; background: var(--accent); border-radius: 2px; opacity: 0.5; }
+
+    /* HOW IT WORKS */
+    .cs-hiw-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+    .cs-yaml-block {
+      background: var(--bg-card); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px; overflow: hidden;
+    }
+    .cs-yaml-titlebar {
+      background: var(--bg-mid); padding: 10px 16px;
+      display: flex; align-items: center; gap: 8px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .cs-yaml-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .cs-yaml-dot.r { background: #ff5f57; }
+    .cs-yaml-dot.y { background: #febc2e; }
+    .cs-yaml-dot.g { background: #28c840; }
+    .cs-yaml-filename { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-left: 4px; }
+    .cs-yaml-block pre {
+      padding: 20px 22px; font-family: var(--font-mono); font-size: 13px;
+      line-height: 1.8; color: var(--text-secondary); overflow-x: auto;
+    }
+    .cs-yaml-block pre .k { color: var(--red); }
+    .cs-yaml-block pre .v { color: var(--accent); }
+    .cs-yaml-block pre .s { color: #e2c084; }
+    .cs-yaml-block pre .c { color: var(--text-muted); }
+    .cs-hiw-steps { display: flex; flex-direction: column; gap: 28px; }
+    .cs-hiw-step { display: flex; gap: 18px; }
+    .cs-hiw-step-num {
+      flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%;
+      background: var(--accent-dim); border: 1px solid var(--accent-border);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 13px; color: var(--accent); font-weight: 700;
+    }
+    .cs-hiw-step-title { font-family: var(--font-mono); font-size: 14px; color: var(--text-primary); font-weight: 600; margin-bottom: 6px; }
+    .cs-hiw-step-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+
+    /* PLATFORMS */
+    .cs-platforms-wrap { background: var(--bg-dark); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .cs-platform-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 10px;
+    }
+    .cs-platform-item {
+      background: var(--bg-card); border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 8px; padding: 14px 16px;
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-mono); font-size: 13px; color: var(--text-secondary);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .cs-platform-item:hover { border-color: var(--accent-border); color: var(--text-primary); }
+    .cs-platform-item i { color: var(--accent); font-size: 16px; width: 18px; text-align: center; }
+
+    /* FOOTER CTA */
+    .cs-footer-cta {
+      background: var(--bg-darkest); text-align: center;
+      padding: 80px 40px; border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    .cs-footer-cta h2 { font-family: var(--font-display); font-size: clamp(22px, 4vw, 36px); color: #fff; margin-bottom: 14px; }
+    .cs-footer-cta p { color: var(--text-secondary); font-size: 16px; margin-bottom: 36px; max-width: 480px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+    .cs-cta-btn-wrap { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .cs-cta-btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 14px 32px; border-radius: 6px; font-family: var(--font-mono);
+      font-size: 15px; text-decoration: none; font-weight: 600;
+      transition: all 0.25s;
+    }
+    .cs-cta-btn.primary { background: var(--accent); color: #0d0e11; border: 1px solid var(--accent); }
+    .cs-cta-btn.primary:hover { background: #4de09a; }
+    .cs-cta-btn.secondary { background: none; color: var(--accent); border: 1px solid var(--accent-border); }
+    .cs-cta-btn.secondary:hover { background: var(--accent-dim); border-color: var(--accent); }
+    .cs-footer-meta {
+      margin-top: 60px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.06);
+      display: flex; justify-content: space-between; align-items: center;
+      font-family: var(--font-mono); font-size: 12px; color: var(--text-muted);
+      max-width: 900px; margin-left: auto; margin-right: auto; flex-wrap: wrap; gap: 12px;
+    }
+    .cs-footer-meta a { color: var(--accent); text-decoration: none; }
+    .cs-footer-meta a:hover { text-decoration: underline; }
+    .cs-license-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+      padding: 4px 12px; border-radius: 4px;
+    }
+
+    /* STICKY INSTALL BAR */
+    .cs-sticky-bar {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 99;
+      background: rgba(13,14,17,0.95); backdrop-filter: blur(12px);
+      border-top: 1px solid var(--accent-border);
+      padding: 12px 40px;
+      display: flex; align-items: center; justify-content: center; gap: 16px;
+      transform: translateY(100%);
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .cs-sticky-bar.visible { transform: translateY(0); }
+    .cs-sticky-bar code {
+      font-family: var(--font-mono); font-size: 13px; color: var(--accent);
+      background: var(--bg-card); border: 1px solid rgba(255,255,255,0.08);
+      padding: 8px 16px; border-radius: 6px;
+    }
+    .cs-sticky-bar .cs-sticky-copy {
+      flex-shrink: 0; background: var(--accent); border: none;
+      color: #0d0e11; font-family: var(--font-mono); font-size: 12px;
+      padding: 8px 18px; border-radius: 5px; cursor: pointer;
+      font-weight: 600; transition: background 0.2s;
+    }
+    .cs-sticky-bar .cs-sticky-copy:hover { background: #4de09a; }
+    .cs-sticky-bar .cs-sticky-copy.copied { background: #4de09a; }
+    @media (max-width: 640px) {
+      .cs-sticky-bar { padding: 10px 16px; gap: 10px; }
+      .cs-sticky-bar code { font-size: 11px; padding: 6px 10px; }
+    }
+
+    /* SKIP TO CONTENT */
+    .cs-skip-link {
+      position: absolute; top: -100px; left: 16px; z-index: 200;
+      background: var(--accent); color: #0d0e11; font-family: var(--font-mono);
+      font-size: 14px; font-weight: 700; padding: 12px 24px; border-radius: 0 0 6px 6px;
+      text-decoration: none; transition: top 0.2s;
+    }
+    .cs-skip-link:focus { top: 0; }
+
+    /* FOCUS-VISIBLE — accessibility for keyboard navigation */
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+    .cs-tab-btn:focus-visible {
+      outline-offset: -2px;
+      background: rgba(100,244,172,0.08);
+    }
+    .cs-copy-btn:focus-visible {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .cs-nav-cta:focus-visible,
+    .cs-cta-btn:focus-visible {
+      outline-offset: 3px;
+    }
+    .cs-nav-links a:focus-visible {
+      color: var(--accent);
+      outline-offset: 4px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .cs-hiw-grid { grid-template-columns: 1fr; }
+      .cs-nav-links { display: none; }
+    }
+    @media (max-width: 640px) {
+      .cs-nav { padding: 0 16px; gap: 8px; }
+      .cs-nav-badge { display: none; }
+      .cs-nav-cta { padding: 6px 12px; font-size: 12px; }
+      .cs-hero { padding: 60px 16px 50px; }
+      .cs-hero-title { letter-spacing: -0.5px; }
+      .cs-hero-sub { font-size: 16px; margin-bottom: 36px; }
+      .cs-section { padding: 60px 16px; }
+      .cs-cats-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      .cs-cat-card { padding: 16px 14px; }
+      .cs-platform-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      .cs-platform-item { padding: 12px 12px; font-size: 12px; }
+      .cs-stat-item { min-width: 80px; padding: 18px 10px; }
+      .cs-stat-num { font-size: 28px; }
+      .cs-stat-lbl { font-size: 10px; letter-spacing: 1px; }
+      .cs-install-box { margin-left: 0; margin-right: 0; border-radius: 8px; }
+      .cs-cmd-row code { font-size: 11px; }
+      .cs-tab-btn { padding: 10px 8px; font-size: 11px; }
+      .cs-tab-panel { padding: 16px; }
+      .cs-cta-btn { padding: 12px 20px; font-size: 13px; }
+      .cs-footer-cta { padding: 60px 16px; }
+      .cs-footer-meta { justify-content: center; text-align: center; }
+    }
+    @media (max-width: 375px) {
+      .cs-hero-title { font-size: 26px; }
+      .cs-cats-grid { grid-template-columns: 1fr; }
+      .cs-platform-grid { grid-template-columns: 1fr; }
+      .cs-stats-bar { flex-direction: column; align-items: center; }
+      .cs-stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); width: 100%; }
+      .cs-stat-item:last-child { border-bottom: none; }
+      .cs-cta-btn-wrap { flex-direction: column; align-items: stretch; }
+      .cs-cta-btn { justify-content: center; }
+    }
+
+    /* PRINT */
+    @media print {
+      .cs-nav, .cs-sticky-bar, .cs-cta-btn-wrap { display: none; }
+      body { background: #fff; color: #111; }
+      .cs-hero { background: none; padding: 20px 0; }
+      .cs-hero-title, .cs-hero-title span { color: #111; }
+      .cs-hero-sub { color: #333; }
+      .cs-section-title { color: #111; }
+      .cs-section-tag, .cs-section-sub { color: #444; }
+      .cs-cat-card, .cs-platform-item, .cs-yaml-block { border-color: #ccc; background: #fafafa; }
+      .cs-cat-name, .cs-cat-icon, .cs-hiw-step-title { color: #111; }
+      .cs-cat-count, .cs-hiw-step-desc, .cs-yaml-block pre { color: #333; }
+      .cs-stat-num { color: #111; }
+      .cs-stat-lbl { color: #555; }
+      .cs-install-box { animation: none; box-shadow: none; border-color: #ccc; }
+      .cs-footer-cta { border-top: 1px solid #ccc; }
+      .cs-footer-cta h2 { color: #111; }
+      .cs-footer-cta p { color: #333; }
+      .cs-footer-meta { color: #555; }
+      .cs-footer-meta a { color: #111; }
+      a { color: #111; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="cs-skip-link">Skip to content</a>
+
+  <!-- NAV -->
+  <nav class="cs-nav" aria-label="Main navigation">
+    <div class="cs-nav-left">
+      <a href="https://www.mahipal.engineer" class="cs-nav-logo">Mahipal</a>
+      <span class="cs-nav-badge"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> MITRE ATT&amp;CK Mapped</span>
+    </div>
+    <ul class="cs-nav-links">
+      <li><a href="#categories">Skills</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#platforms">Platforms</a></li>
+    </ul>
+    <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" target="_blank" rel="noopener noreferrer" class="cs-nav-cta">
+      <i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <main id="main-content">
+  <section class="cs-hero">
+    <div class="cs-hero-eyebrow">
+      <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+      Community project · Not affiliated with Anthropic PBC
+    </div>
+    <h1 class="cs-hero-title">
+      <span>734</span> Cybersecurity Skills<br>for AI Agents
+    </h1>
+    <p class="cs-hero-sub">
+      The largest open-source library of structured cybersecurity skills following the <strong>agentskills.io</strong> standard. Deploy instantly to Claude Code, GitHub Copilot, Cursor, and 26+ platforms.
+    </p>
+
+    <!-- Install tabs -->
+    <div class="cs-install-box">
+      <div class="cs-tab-bar" role="tablist" aria-label="Installation methods">
+        <button class="cs-tab-btn active" data-tab="npx" role="tab" aria-selected="true" aria-controls="tab-npx" id="tab-btn-npx"><i class="fa-brands fa-npm" aria-hidden="true"></i> npx</button>
+        <button class="cs-tab-btn" data-tab="claude" role="tab" aria-selected="false" aria-controls="tab-claude" id="tab-btn-claude"><i class="fa-solid fa-robot" aria-hidden="true"></i> Claude Code</button>
+        <button class="cs-tab-btn" data-tab="git" role="tab" aria-selected="false" aria-controls="tab-git" id="tab-btn-git"><i class="fa-brands fa-git-alt" aria-hidden="true"></i> git clone</button>
+      </div>
+      <div class="cs-tab-panel active" id="tab-npx" role="tabpanel" aria-labelledby="tab-btn-npx">
+        <div class="cs-cmd-row">
+          <code id="cmd-npx">npx skills add mukul975/Anthropic-Cybersecurity-Skills</code>
+          <button class="cs-copy-btn" data-cmd="cmd-npx" aria-label="Copy npx install command"><i class="fa-regular fa-copy" aria-hidden="true"></i> Copy</button>
+        </div>
+        <p class="cs-tab-note">Requires Node.js 18+. Skills install to <code>~/.claude/skills/</code></p>
+      </div>
+      <div class="cs-tab-panel" id="tab-claude" role="tabpanel" aria-labelledby="tab-btn-claude">
+        <div class="cs-cmd-row">
+          <code id="cmd-claude">/plugin marketplace add mukul975/Anthropic-Cybersecurity-Skills</code>
+          <button class="cs-copy-btn" data-cmd="cmd-claude" aria-label="Copy Claude Code install command"><i class="fa-regular fa-copy" aria-hidden="true"></i> Copy</button>
+        </div>
+        <p class="cs-tab-note">Run inside Claude Code. <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" target="_blank" rel="noopener noreferrer">Learn more →</a></p>
+      </div>
+      <div class="cs-tab-panel" id="tab-git" role="tabpanel" aria-labelledby="tab-btn-git">
+        <div class="cs-cmd-row">
+          <code id="cmd-git">git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills.git ~/.claude/skills/cybersecurity</code>
+          <button class="cs-copy-btn" data-cmd="cmd-git" aria-label="Copy git clone command"><i class="fa-regular fa-copy" aria-hidden="true"></i> Copy</button>
+        </div>
+        <p class="cs-tab-note">Manual install — works with any agent that reads structured Markdown.</p>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="cs-stats-bar">
+      <div class="cs-stat-item">
+        <span class="cs-stat-num">734</span>
+        <span class="cs-stat-lbl">Skills</span>
+      </div>
+      <div class="cs-stat-item">
+        <span class="cs-stat-num">36</span>
+        <span class="cs-stat-lbl">Categories</span>
+      </div>
+      <div class="cs-stat-item">
+        <span class="cs-stat-num">26+</span>
+        <span class="cs-stat-lbl">Platforms</span>
+      </div>
+      <div class="cs-stat-item">
+        <span class="cs-stat-num">22</span>
+        <span class="cs-stat-lbl">GitHub Stars</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <div class="cs-cats-wrap" id="categories">
+    <div class="cs-section">
+      <div class="cs-section-header">
+        <span class="cs-section-tag">734 skills across 36 categories</span>
+        <h2 class="cs-section-title">Every Domain Covered</h2>
+        <p class="cs-section-sub">From cloud security to OT/ICS, red teaming to compliance — structured skills ready for any AI agent.</p>
+      </div>
+      <div class="cs-cats-grid">
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-cloud" aria-hidden="true"></i>
+          <div class="cs-cat-name">Cloud Security</div>
+          <div class="cs-cat-count">60 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:100%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-crosshairs" aria-hidden="true"></i>
+          <div class="cs-cat-name">Threat Hunting</div>
+          <div class="cs-cat-count">55 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:92%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-satellite-dish" aria-hidden="true"></i>
+          <div class="cs-cat-name">Threat Intelligence</div>
+          <div class="cs-cat-count">50 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:83%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-globe" aria-hidden="true"></i>
+          <div class="cs-cat-name">Web App Security</div>
+          <div class="cs-cat-count">42 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:70%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-network-wired" aria-hidden="true"></i>
+          <div class="cs-cat-name">Network Security</div>
+          <div class="cs-cat-count">40 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:67%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-bug" aria-hidden="true"></i>
+          <div class="cs-cat-name">Malware Analysis</div>
+          <div class="cs-cat-count">39 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:65%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <div class="cs-cat-name">Digital Forensics</div>
+          <div class="cs-cat-count">37 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:62%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-tower-broadcast" aria-hidden="true"></i>
+          <div class="cs-cat-name">Security Operations</div>
+          <div class="cs-cat-count">36 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:60%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-id-card" aria-hidden="true"></i>
+          <div class="cs-cat-name">Identity &amp; Access</div>
+          <div class="cs-cat-count">35 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:58%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-shield-halved" aria-hidden="true"></i>
+          <div class="cs-cat-name">SOC Operations</div>
+          <div class="cs-cat-count">33 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:55%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-box" aria-hidden="true"></i>
+          <div class="cs-cat-name">Container Security</div>
+          <div class="cs-cat-count">30 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:50%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-industry" aria-hidden="true"></i>
+          <div class="cs-cat-name">OT/ICS Security</div>
+          <div class="cs-cat-count">28 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:47%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-plug" aria-hidden="true"></i>
+          <div class="cs-cat-name">API Security</div>
+          <div class="cs-cat-count">28 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:47%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+          <div class="cs-cat-name">Incident Response</div>
+          <div class="cs-cat-count">25 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:42%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-circle-exclamation" aria-hidden="true"></i>
+          <div class="cs-cat-name">Vulnerability Mgmt</div>
+          <div class="cs-cat-count">25 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:42%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-user-secret" aria-hidden="true"></i>
+          <div class="cs-cat-name">Red Teaming</div>
+          <div class="cs-cat-count">24 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:40%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-lock-open" aria-hidden="true"></i>
+          <div class="cs-cat-name">Penetration Testing</div>
+          <div class="cs-cat-count">23 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:38%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-code-branch" aria-hidden="true"></i>
+          <div class="cs-cat-name">DevSecOps</div>
+          <div class="cs-cat-count">17 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:28%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-computer" aria-hidden="true"></i>
+          <div class="cs-cat-name">Endpoint Security</div>
+          <div class="cs-cat-count">17 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:28%"></div></div>
+        </div>
+        <div class="cs-cat-card">
+          <i class="cs-cat-icon fa-solid fa-fish-fins" aria-hidden="true"></i>
+          <div class="cs-cat-name">Phishing Defense</div>
+          <div class="cs-cat-count">16 skills</div>
+          <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:27%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section class="cs-section" id="how-it-works">
+    <div class="cs-section-header">
+      <span class="cs-section-tag">Progressive Disclosure Pattern</span>
+      <h2 class="cs-section-title">How It Works</h2>
+      <p class="cs-section-sub">AI agents read only the YAML frontmatter (~40 tokens) to decide relevance — then load the full workflow only when needed.</p>
+    </div>
+    <div class="cs-hiw-grid">
+      <div class="cs-yaml-block">
+        <div class="cs-yaml-titlebar" aria-hidden="true">
+          <div class="cs-yaml-dot r"></div>
+          <div class="cs-yaml-dot y"></div>
+          <div class="cs-yaml-dot g"></div>
+          <span class="cs-yaml-filename">SKILL.md</span>
+        </div>
+        <pre><span class="c">---</span>
+<span class="k">name:</span> <span class="v">performing-memory-forensics</span>
+<span class="k">description:</span> <span class="s">Analyze memory dumps to extract
+  processes, connections, and malware
+  artifacts using Volatility3.</span>
+<span class="k">domain:</span> <span class="v">cybersecurity</span>
+<span class="k">subdomain:</span> <span class="v">digital-forensics</span>
+<span class="k">tags:</span> <span class="v">[forensics, volatility3,
+  memory-analysis, incident-response]</span>
+<span class="c">---</span>
+
+<span class="c">## When to Use</span>
+Trigger when investigating a compromise
+and need to analyze volatile evidence...
+
+<span class="c">## Prerequisites</span>
+- Volatility3 installed
+- Memory dump acquired (dd/winpmem)
+- Python 3.8+ environment
+
+<span class="c">## Workflow</span>
+1. Identify OS profile
+2. List running processes (windows.pslist)
+3. Detect injected code (windows.malfind)
+...</pre>
+      </div>
+      <div class="cs-hiw-steps">
+        <div class="cs-hiw-step">
+          <div class="cs-hiw-step-num">1</div>
+          <div>
+            <div class="cs-hiw-step-title">Discovery (~40 tokens)</div>
+            <div class="cs-hiw-step-desc">The AI agent reads YAML frontmatter only — name, description, domain, tags. Zero token waste on irrelevant skills.</div>
+          </div>
+        </div>
+        <div class="cs-hiw-step">
+          <div class="cs-hiw-step-num">2</div>
+          <div>
+            <div class="cs-hiw-step-title">Relevance Check</div>
+            <div class="cs-hiw-step-desc">If the skill matches the task, the agent loads the full body — workflow steps, prerequisites, tool commands, verification checks.</div>
+          </div>
+        </div>
+        <div class="cs-hiw-step">
+          <div class="cs-hiw-step-num">3</div>
+          <div>
+            <div class="cs-hiw-step-title">Execution</div>
+            <div class="cs-hiw-step-desc">The agent follows step-by-step workflow instructions with exact CLI commands, MITRE ATT&amp;CK references, and verification steps.</div>
+          </div>
+        </div>
+        <div class="cs-hiw-step">
+          <div class="cs-hiw-step-num">4</div>
+          <div>
+            <div class="cs-hiw-step-title">MITRE ATT&amp;CK Mapped</div>
+            <div class="cs-hiw-step-desc">Every skill references the relevant MITRE ATT&amp;CK technique IDs, NIST CSF controls, and CVEs where applicable.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORMS -->
+  <div class="cs-platforms-wrap" id="platforms">
+    <div class="cs-section">
+      <div class="cs-section-header">
+        <span class="cs-section-tag">agentskills.io compatible</span>
+        <h2 class="cs-section-title">Works Everywhere</h2>
+        <p class="cs-section-sub">Any agent that reads structured Markdown can use these skills immediately.</p>
+      </div>
+      <div class="cs-platform-grid">
+        <div class="cs-platform-item"><i class="fa-solid fa-robot" aria-hidden="true"></i> Claude Code</div>
+        <div class="cs-platform-item"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub Copilot</div>
+        <div class="cs-platform-item"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> Cursor</div>
+        <div class="cs-platform-item"><i class="fa-brands fa-google" aria-hidden="true"></i> Gemini CLI</div>
+        <div class="cs-platform-item"><i class="fa-brands fa-openai" aria-hidden="true"></i> OpenAI Codex CLI</div>
+        <div class="cs-platform-item"><i class="fa-solid fa-bolt" aria-hidden="true"></i> Amp</div>
+        <div class="cs-platform-item"><i class="fa-solid fa-wind" aria-hidden="true"></i> Windsurf</div>
+        <div class="cs-platform-item"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Aider</div>
+        <div class="cs-platform-item"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> Continue</div>
+        <div class="cs-platform-item"><i class="fa-solid fa-feather" aria-hidden="true"></i> Goose</div>
+        <div class="cs-platform-item"><i class="fa-solid fa-gem" aria-hidden="true"></i> Zed</div>
+        <div class="cs-platform-item"><i class="fa-solid fa-code" aria-hidden="true"></i> Cline</div>
+        <div class="cs-platform-item"><i class="fa-solid fa-eye" aria-hidden="true"></i> Void</div>
+        <div class="cs-platform-item"><i class="fa-solid fa-satellite" aria-hidden="true"></i> Cody</div>
+        <div class="cs-platform-item"><i class="fa-solid fa-microchip" aria-hidden="true"></i> Kodu</div>
+        <div class="cs-platform-item"><i class="fa-solid fa-crow" aria-hidden="true"></i> Roo Code</div>
+        <div class="cs-platform-item"><i class="fa-solid fa-plus" aria-hidden="true"></i> +10 more</div>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <!-- STICKY INSTALL BAR -->
+  <div class="cs-sticky-bar" aria-label="Quick install command">
+    <code>npx skills add mukul975/Anthropic-Cybersecurity-Skills</code>
+    <button class="cs-sticky-copy" aria-label="Copy install command"><i class="fa-regular fa-copy" aria-hidden="true"></i> Copy</button>
+  </div>
+
+  <!-- FOOTER CTA -->
+  <footer class="cs-footer-cta">
+    <h2>Start Using 734 Skills Today</h2>
+    <p>Open source, Apache 2.0. Contributions welcome from the security community.</p>
+    <div class="cs-cta-btn-wrap">
+      <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" target="_blank" rel="noopener noreferrer" class="cs-cta-btn primary">
+        <i class="fa-brands fa-github" aria-hidden="true"></i> Star on GitHub
+      </a>
+      <a href="https://www.mahipal.engineer" class="cs-cta-btn secondary">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to Portfolio
+      </a>
+    </div>
+    <div class="cs-footer-meta">
+      <span>Built by <a href="https://www.mahipal.engineer">Mahipal</a></span>
+      <span class="cs-license-badge"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i> Apache License 2.0</span>
+      <span><a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contribute →</a></span>
+    </div>
+  </footer>
+
+  <script>
+    // Tab switching with ARIA updates + keyboard navigation
+    const tabBtns = document.querySelectorAll('.cs-tab-btn');
+    const tabPanels = document.querySelectorAll('.cs-tab-panel');
+
+    function switchTab(btn) {
+      const tab = btn.dataset.tab;
+      tabBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      tabPanels.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      document.getElementById('tab-' + tab).classList.add('active');
+    }
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => switchTab(btn));
+    });
+
+    // Keyboard navigation for install tabs (arrow keys, Home, End)
+    document.querySelector('.cs-tab-bar').addEventListener('keydown', (e) => {
+      const tabs = Array.from(tabBtns);
+      const current = tabs.findIndex(t => t.classList.contains('active'));
+      let next = -1;
+
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        next = (current + 1) % tabs.length;
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        next = (current - 1 + tabs.length) % tabs.length;
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        next = 0;
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        next = tabs.length - 1;
+      }
+
+      if (next >= 0) {
+        tabs[next].focus();
+        switchTab(tabs[next]);
+      }
+    });
+
+    // Reusable copy-to-clipboard helper
+    function copyToClipboard(btn, text) {
+      navigator.clipboard.writeText(text).then(() => {
+        const orig = btn.innerHTML;
+        btn.innerHTML = '<i class="fa-solid fa-check" aria-hidden="true"></i> Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('copied'); }, 2000);
+      });
+    }
+
+    document.querySelectorAll('.cs-copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const code = document.getElementById(btn.dataset.cmd).textContent;
+        copyToClipboard(btn, code);
+      });
+    });
+
+    // Sticky install bar — copy button
+    document.querySelector('.cs-sticky-copy').addEventListener('click', function() {
+      copyToClipboard(this, document.querySelector('.cs-sticky-bar code').textContent);
+    });
+
+    // Animated number counters for stats (734, 36, 26+, 22)
+    function animateCounter(el, target, suffix) {
+      const duration = 1600;
+      const start = performance.now();
+
+      function update(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round(eased * target);
+        el.textContent = current + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+      }
+
+      requestAnimationFrame(update);
+    }
+
+    let statsAnimated = false;
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !statsAnimated) {
+          statsAnimated = true;
+          document.querySelectorAll('.cs-stat-num').forEach(el => {
+            const raw = el.textContent.trim();
+            const suffix = raw.replace(/[0-9]/g, '');
+            const num = parseInt(raw, 10);
+            if (!isNaN(num)) {
+              el.textContent = '0' + suffix;
+              animateCounter(el, num, suffix);
+            }
+          });
+          statsObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    statsObserver.observe(document.querySelector('.cs-stats-bar'));
+
+    // Sticky install bar — show after scrolling past hero
+    const hero = document.querySelector('.cs-hero');
+    const stickyBar = document.querySelector('.cs-sticky-bar');
+
+    const heroObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          stickyBar.classList.add('visible');
+        } else {
+          stickyBar.classList.remove('visible');
+        }
+      });
+    }, { threshold: 0 });
+
+    heroObserver.observe(hero);
+
+    // Category bar-fills animate width from 0 on scroll
+    document.querySelectorAll('.cs-cat-bar-fill').forEach(fill => {
+      fill.dataset.targetWidth = fill.style.width;
+      fill.style.width = '0%';
+      fill.style.transition = 'width 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+    });
+
+    const barObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const fill = entry.target.querySelector('.cs-cat-bar-fill');
+          if (fill && fill.dataset.targetWidth) {
+            fill.style.width = fill.dataset.targetWidth;
+          }
+          barObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.cs-cat-card').forEach(card => barObserver.observe(card));
+
+    // Fade-in animation on scroll for cards, platforms, steps
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.cs-cat-card, .cs-platform-item, .cs-hiw-step').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+      fadeObserver.observe(el);
+    });
+  </script>
+</body>
+</html>
