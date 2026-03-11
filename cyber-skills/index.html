@@ -122,9 +122,13 @@
         radial-gradient(ellipse 80% 60% at 50% -10%, rgba(100,244,172,0.08) 0%, transparent 70%);
       background-size: 24px 24px, 100% 100%;
       background-position: 0 0, 0 0;
-      padding: 100px 40px 80px; text-align: center;
+      padding: 100px 40px 80px;
       border-bottom: 1px solid rgba(255,255,255,0.05);
       position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
     .cs-hero-eyebrow {
       display: inline-flex; align-items: center; gap: 8px;
@@ -220,6 +224,18 @@
     .cs-cat-bar-fill { height: 100%; background: var(--accent); border-radius: 2px; opacity: 0.5; }
 
     /* HOW IT WORKS */
+    .cs-yaml-tabs {
+      display: flex; gap: 4px; margin-left: auto;
+    }
+    .cs-yaml-tab {
+      background: none; border: none; cursor: pointer;
+      font-family: var(--font-mono); font-size: 11px;
+      color: var(--text-muted); padding: 4px 10px;
+      border-radius: 3px; transition: color 0.2s, background 0.2s;
+    }
+    .cs-yaml-tab.active { color: var(--accent); background: rgba(100,244,172,0.08); }
+    .cs-yaml-tab:hover:not(.active) { color: var(--text-secondary); }
+    .cs-yaml-example { padding: 20px 22px; font-family: var(--font-mono); font-size: 13px; line-height: 1.8; color: var(--text-secondary); overflow-x: auto; }
     .cs-hiw-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
     .cs-yaml-block {
       background: var(--bg-card); border: 1px solid rgba(255,255,255,0.08);
@@ -657,8 +673,13 @@
           <div class="cs-yaml-dot y"></div>
           <div class="cs-yaml-dot g"></div>
           <span class="cs-yaml-filename">SKILL.md</span>
+          <div class="cs-yaml-tabs" role="tablist">
+            <button class="cs-yaml-tab active" data-example="forensics" role="tab" aria-selected="true">Digital Forensics</button>
+            <button class="cs-yaml-tab" data-example="cloud" role="tab" aria-selected="false">Cloud Security</button>
+            <button class="cs-yaml-tab" data-example="redteam" role="tab" aria-selected="false">Red Teaming</button>
+          </div>
         </div>
-        <pre><span class="c">---</span>
+        <pre id="yaml-forensics" class="cs-yaml-example active"><span class="c">---</span>
 <span class="k">name:</span> <span class="v">performing-memory-forensics</span>
 <span class="k">description:</span> <span class="s">Analyze memory dumps to extract
   processes, connections, and malware
@@ -682,6 +703,58 @@ and need to analyze volatile evidence...
 1. Identify OS profile
 2. List running processes (windows.pslist)
 3. Detect injected code (windows.malfind)
+...</pre>
+        <pre id="yaml-cloud" class="cs-yaml-example" style="display:none"><span class="c">---</span>
+<span class="k">name:</span> <span class="v">aws-s3-bucket-security-audit</span>
+<span class="k">description:</span> <span class="s">Audit S3 bucket configurations
+  for public exposure, encryption gaps,
+  and misconfigured access policies.</span>
+<span class="k">domain:</span> <span class="v">cybersecurity</span>
+<span class="k">subdomain:</span> <span class="v">cloud-security</span>
+<span class="k">tags:</span> <span class="v">[aws, s3, cloud-security,
+  misconfiguration, data-exposure]</span>
+<span class="c">---</span>
+
+<span class="c">## When to Use</span>
+Use when assessing AWS environment for
+publicly accessible or poorly secured
+S3 buckets...
+
+<span class="c">## Prerequisites</span>
+- AWS CLI configured
+- IAM permissions: s3:List*, s3:Get*
+- jq installed
+
+<span class="c">## Workflow</span>
+1. List all buckets (aws s3 ls)
+2. Check public access settings
+3. Audit bucket policies and ACLs
+...</pre>
+        <pre id="yaml-redteam" class="cs-yaml-example" style="display:none"><span class="c">---</span>
+<span class="k">name:</span> <span class="v">kerberoasting-with-impacket</span>
+<span class="k">description:</span> <span class="s">Extract Kerberos service tickets
+  for offline cracking to identify weak
+  service account passwords in AD.</span>
+<span class="k">domain:</span> <span class="v">cybersecurity</span>
+<span class="k">subdomain:</span> <span class="v">red-teaming</span>
+<span class="k">tags:</span> <span class="v">[kerberos, active-directory,
+  impacket, credential-access]</span>
+<span class="c">---</span>
+
+<span class="c">## When to Use</span>
+Use during internal pentest when you
+have domain credentials and need to
+escalate privileges...
+
+<span class="c">## Prerequisites</span>
+- Impacket installed
+- Valid domain credentials
+- Network access to DC
+
+<span class="c">## Workflow</span>
+1. Run GetUserSPNs.py to enumerate SPNs
+2. Request service tickets (-request)
+3. Crack hashes with hashcat -m 13100
 ...</pre>
       </div>
       <div class="cs-hiw-steps">
@@ -774,6 +847,17 @@ and need to analyze volatile evidence...
   </footer>
 
   <script>
+    // YAML example tab switching
+    document.querySelectorAll('.cs-yaml-tab').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.cs-yaml-tab').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+        document.querySelectorAll('.cs-yaml-example').forEach(p => p.style.display = 'none');
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected','true');
+        document.getElementById('yaml-' + btn.dataset.example).style.display = 'block';
+      });
+    });
+
     // Tab switching with ARIA updates + keyboard navigation
     const tabBtns = document.querySelectorAll('.cs-tab-btn');
     const tabPanels = document.querySelectorAll('.cs-tab-panel');
