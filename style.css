@@ -200,8 +200,7 @@ html {
 /* ---------- MCP TOOLS SECTION ---------- */
 .mcp-explainer {
   max-width: 780px;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 32px auto 40px;
   text-align: center;
 }
 
