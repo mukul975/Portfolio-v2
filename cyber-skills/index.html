@@ -18,19 +18,20 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "lb9967r49a");
   </script>
-  <title>Anthropic Cybersecurity Skills — 734+ AI Agent Skills | Mahipal</title>
+  <title>Anthropic Cybersecurity Skills — 734+ AI-Ready Skills for Claude Code &amp; More | Mahipal</title>
   <meta name="description" content="734+ structured cybersecurity skills for AI agents. MITRE ATT&CK mapped. Works with Claude Code, GitHub Copilot, Cursor, Gemini CLI and 26+ platforms. Open source, Apache 2.0.">
+  <meta name="keywords" content="cybersecurity skills, AI agent skills, Claude Code skills, MITRE ATT&CK, agentskills.io, Claude cybersecurity, AI security tools, penetration testing AI, threat hunting skills, open source cybersecurity">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.mahipal.engineer/cyber-skills">
-  <meta property="og:title" content="Anthropic Cybersecurity Skills — 734+ AI Agent Skills">
+  <meta property="og:title" content="Anthropic Cybersecurity Skills — 734+ AI-Ready Skills for Claude Code &amp; More">
   <meta property="og:description" content="The largest open-source collection of cybersecurity skills for AI agents. MITRE ATT&CK mapped. Claude Code, GitHub Copilot, Cursor, Gemini CLI and 26+ platforms.">
-  <meta property="og:image" content="https://www.mahipal.engineer/assets/Mockup.png">
+  <meta property="og:image" content="https://www.mahipal.engineer/assets/og-image.png">
   <meta property="og:url" content="https://www.mahipal.engineer/cyber-skills">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Anthropic Cybersecurity Skills — 734+ AI Agent Skills">
-  <meta name="twitter:description" content="734+ structured cybersecurity skills for AI agents. MITRE ATT&CK mapped.">
-  <meta name="twitter:image" content="https://www.mahipal.engineer/assets/Mockup.png">
+  <meta name="twitter:title" content="Anthropic Cybersecurity Skills — 734+ AI-Ready Skills for Claude Code &amp; More">
+  <meta name="twitter:description" content="734+ structured cybersecurity skills for AI agents. MITRE ATT&CK mapped. Works with Claude Code, GitHub Copilot, Cursor and 26+ platforms.">
+  <meta name="twitter:image" content="https://www.mahipal.engineer/assets/og-image.png">
   <link rel="icon" href="/assets/cyber.svg" type="image/svg+xml">
   <script defer src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,17 +42,26 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareSourceCode",
+    "@type": "SoftwareApplication",
     "name": "Anthropic Cybersecurity Skills",
+    "url": "https://www.mahipal.engineer/cyber-skills",
+    "applicationCategory": "SecurityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
     "codeRepository": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-    "programmingLanguage": "Python",
     "license": "https://www.apache.org/licenses/LICENSE-2.0",
     "author": {
       "@type": "Person",
-      "name": "Mahipal Jangra",
+      "name": "Mahipal",
       "url": "https://www.mahipal.engineer/"
     },
-    "description": "734+ structured cybersecurity skills for AI agents. MITRE ATT&CK mapped, agentskills.io standard. Compatible with Claude Code, GitHub Copilot, Cursor, Gemini CLI and 26+ platforms."
+    "description": "734+ structured cybersecurity skills for AI agents. MITRE ATT&CK mapped, agentskills.io standard. Compatible with Claude Code, GitHub Copilot, Cursor, Gemini CLI and 26+ platforms.",
+    "softwareVersion": "1.0",
+    "keywords": "cybersecurity, AI agents, Claude Code, MITRE ATT&CK, agentskills.io, threat hunting, penetration testing"
   }
   </script>
   <style>
@@ -113,6 +123,31 @@
       transition: background 0.2s, border-color 0.2s;
     }
     .cs-nav-cta:hover { background: rgba(100,244,172,0.2); border-color: var(--accent); }
+
+    /* NAV ACTIONS — star + view buttons */
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .gh-star-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.14);
+      color: var(--text-secondary); font-family: var(--font-mono); font-size: 12px;
+      padding: 7px 14px; border-radius: 5px; text-decoration: none;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+    }
+    .gh-star-btn:hover { border-color: #f0c040; color: #f0c040; background: rgba(240,192,64,0.06); }
+    .gh-star-btn i { font-size: 13px; }
+    .gh-star-count {
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1);
+      padding: 1px 7px; border-radius: 3px; font-size: 11px; color: var(--text-primary);
+      min-width: 28px; text-align: center;
+    }
+    .gh-view-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent-dim); border: 1px solid var(--accent-border);
+      color: var(--accent); font-family: var(--font-mono); font-size: 13px;
+      padding: 8px 18px; border-radius: 5px; text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .gh-view-btn:hover { background: rgba(100,244,172,0.2); border-color: var(--accent); }
 
     /* HERO — with dot-grid background pattern */
     .cs-hero {
@@ -386,7 +421,8 @@
     @media (max-width: 640px) {
       .cs-nav { padding: 0 16px; gap: 8px; }
       .cs-nav-badge { display: none; }
-      .cs-nav-cta { padding: 6px 12px; font-size: 12px; }
+      .gh-star-btn { display: none; }
+      .gh-view-btn { padding: 6px 12px; font-size: 12px; }
       .cs-hero { padding: 60px 16px 50px; }
       .cs-hero-title { letter-spacing: -0.5px; }
       .cs-hero-sub { font-size: 16px; margin-bottom: 36px; }
@@ -456,9 +492,16 @@
       <li><a href="#how-it-works">How It Works</a></li>
       <li><a href="#platforms">Platforms</a></li>
     </ul>
-    <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" target="_blank" rel="noopener noreferrer" class="cs-nav-cta">
-      <i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub
-    </a>
+    <div class="nav-actions">
+      <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" target="_blank" rel="noopener noreferrer" class="gh-star-btn" id="gh-star-btn" aria-label="Star on GitHub">
+        <i class="fa-regular fa-star" aria-hidden="true"></i>
+        <span>Star</span>
+        <span class="gh-star-count" id="gh-star-count">...</span>
+      </a>
+      <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" target="_blank" rel="noopener noreferrer" class="gh-view-btn">
+        <i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub
+      </a>
+    </div>
   </nav>
 
   <!-- HERO -->
@@ -522,6 +565,137 @@
       <div class="cs-stat-item">
         <span class="cs-stat-num">22</span>
         <span class="cs-stat-lbl">GitHub Stars</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="cs-section" id="how-it-works">
+    <div class="cs-section-header">
+      <span class="cs-section-tag">Progressive Disclosure Pattern</span>
+      <h2 class="cs-section-title">How It Works</h2>
+      <p class="cs-section-sub">AI agents read only the YAML frontmatter (~40 tokens) to decide relevance — then load the full workflow only when needed.</p>
+    </div>
+    <div class="cs-hiw-grid">
+      <div class="cs-yaml-block">
+        <div class="cs-yaml-titlebar" aria-hidden="true">
+          <div class="cs-yaml-dot r"></div>
+          <div class="cs-yaml-dot y"></div>
+          <div class="cs-yaml-dot g"></div>
+          <span class="cs-yaml-filename">SKILL.md</span>
+          <div class="cs-yaml-tabs" role="tablist">
+            <button class="cs-yaml-tab active" data-example="forensics" role="tab" aria-selected="true">Digital Forensics</button>
+            <button class="cs-yaml-tab" data-example="cloud" role="tab" aria-selected="false">Cloud Security</button>
+            <button class="cs-yaml-tab" data-example="redteam" role="tab" aria-selected="false">Red Teaming</button>
+          </div>
+        </div>
+        <pre id="yaml-forensics" class="cs-yaml-example active"><span class="c">---</span>
+<span class="k">name:</span> <span class="v">performing-memory-forensics</span>
+<span class="k">description:</span> <span class="s">Analyze memory dumps to extract
+  processes, connections, and malware
+  artifacts using Volatility3.</span>
+<span class="k">domain:</span> <span class="v">cybersecurity</span>
+<span class="k">subdomain:</span> <span class="v">digital-forensics</span>
+<span class="k">tags:</span> <span class="v">[forensics, volatility3,
+  memory-analysis, incident-response]</span>
+<span class="c">---</span>
+
+<span class="c">## When to Use</span>
+Trigger when investigating a compromise
+and need to analyze volatile evidence...
+
+<span class="c">## Prerequisites</span>
+- Volatility3 installed
+- Memory dump acquired (dd/winpmem)
+- Python 3.8+ environment
+
+<span class="c">## Workflow</span>
+1. Identify OS profile
+2. List running processes (windows.pslist)
+3. Detect injected code (windows.malfind)
+...</pre>
+        <pre id="yaml-cloud" class="cs-yaml-example" style="display:none"><span class="c">---</span>
+<span class="k">name:</span> <span class="v">aws-s3-bucket-security-audit</span>
+<span class="k">description:</span> <span class="s">Audit S3 bucket configurations
+  for public exposure, encryption gaps,
+  and misconfigured access policies.</span>
+<span class="k">domain:</span> <span class="v">cybersecurity</span>
+<span class="k">subdomain:</span> <span class="v">cloud-security</span>
+<span class="k">tags:</span> <span class="v">[aws, s3, cloud-security,
+  misconfiguration, data-exposure]</span>
+<span class="c">---</span>
+
+<span class="c">## When to Use</span>
+Use when assessing AWS environment for
+publicly accessible or poorly secured
+S3 buckets...
+
+<span class="c">## Prerequisites</span>
+- AWS CLI configured
+- IAM permissions: s3:List*, s3:Get*
+- jq installed
+
+<span class="c">## Workflow</span>
+1. List all buckets (aws s3 ls)
+2. Check public access settings
+3. Audit bucket policies and ACLs
+...</pre>
+        <pre id="yaml-redteam" class="cs-yaml-example" style="display:none"><span class="c">---</span>
+<span class="k">name:</span> <span class="v">kerberoasting-with-impacket</span>
+<span class="k">description:</span> <span class="s">Extract Kerberos service tickets
+  for offline cracking to identify weak
+  service account passwords in AD.</span>
+<span class="k">domain:</span> <span class="v">cybersecurity</span>
+<span class="k">subdomain:</span> <span class="v">red-teaming</span>
+<span class="k">tags:</span> <span class="v">[kerberos, active-directory,
+  impacket, credential-access]</span>
+<span class="c">---</span>
+
+<span class="c">## When to Use</span>
+Use during internal pentest when you
+have domain credentials and need to
+escalate privileges...
+
+<span class="c">## Prerequisites</span>
+- Impacket installed
+- Valid domain credentials
+- Network access to DC
+
+<span class="c">## Workflow</span>
+1. Run GetUserSPNs.py to enumerate SPNs
+2. Request service tickets (-request)
+3. Crack hashes with hashcat -m 13100
+...</pre>
+      </div>
+      <div class="cs-hiw-steps">
+        <div class="cs-hiw-step">
+          <div class="cs-hiw-step-num">1</div>
+          <div>
+            <div class="cs-hiw-step-title">Discovery (~40 tokens)</div>
+            <div class="cs-hiw-step-desc">The AI agent reads YAML frontmatter only — name, description, domain, tags. Zero token waste on irrelevant skills.</div>
+          </div>
+        </div>
+        <div class="cs-hiw-step">
+          <div class="cs-hiw-step-num">2</div>
+          <div>
+            <div class="cs-hiw-step-title">Relevance Check</div>
+            <div class="cs-hiw-step-desc">If the skill matches the task, the agent loads the full body — workflow steps, prerequisites, tool commands, verification checks.</div>
+          </div>
+        </div>
+        <div class="cs-hiw-step">
+          <div class="cs-hiw-step-num">3</div>
+          <div>
+            <div class="cs-hiw-step-title">Execution</div>
+            <div class="cs-hiw-step-desc">The agent follows step-by-step workflow instructions with exact CLI commands, MITRE ATT&amp;CK references, and verification steps.</div>
+          </div>
+        </div>
+        <div class="cs-hiw-step">
+          <div class="cs-hiw-step-num">4</div>
+          <div>
+            <div class="cs-hiw-step-title">MITRE ATT&amp;CK Mapped</div>
+            <div class="cs-hiw-step-desc">Every skill references the relevant MITRE ATT&amp;CK technique IDs, NIST CSF controls, and CVEs where applicable.</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -658,137 +832,6 @@
       </div>
     </div>
   </div>
-
-  <!-- HOW IT WORKS -->
-  <section class="cs-section" id="how-it-works">
-    <div class="cs-section-header">
-      <span class="cs-section-tag">Progressive Disclosure Pattern</span>
-      <h2 class="cs-section-title">How It Works</h2>
-      <p class="cs-section-sub">AI agents read only the YAML frontmatter (~40 tokens) to decide relevance — then load the full workflow only when needed.</p>
-    </div>
-    <div class="cs-hiw-grid">
-      <div class="cs-yaml-block">
-        <div class="cs-yaml-titlebar" aria-hidden="true">
-          <div class="cs-yaml-dot r"></div>
-          <div class="cs-yaml-dot y"></div>
-          <div class="cs-yaml-dot g"></div>
-          <span class="cs-yaml-filename">SKILL.md</span>
-          <div class="cs-yaml-tabs" role="tablist">
-            <button class="cs-yaml-tab active" data-example="forensics" role="tab" aria-selected="true">Digital Forensics</button>
-            <button class="cs-yaml-tab" data-example="cloud" role="tab" aria-selected="false">Cloud Security</button>
-            <button class="cs-yaml-tab" data-example="redteam" role="tab" aria-selected="false">Red Teaming</button>
-          </div>
-        </div>
-        <pre id="yaml-forensics" class="cs-yaml-example active"><span class="c">---</span>
-<span class="k">name:</span> <span class="v">performing-memory-forensics</span>
-<span class="k">description:</span> <span class="s">Analyze memory dumps to extract
-  processes, connections, and malware
-  artifacts using Volatility3.</span>
-<span class="k">domain:</span> <span class="v">cybersecurity</span>
-<span class="k">subdomain:</span> <span class="v">digital-forensics</span>
-<span class="k">tags:</span> <span class="v">[forensics, volatility3,
-  memory-analysis, incident-response]</span>
-<span class="c">---</span>
-
-<span class="c">## When to Use</span>
-Trigger when investigating a compromise
-and need to analyze volatile evidence...
-
-<span class="c">## Prerequisites</span>
-- Volatility3 installed
-- Memory dump acquired (dd/winpmem)
-- Python 3.8+ environment
-
-<span class="c">## Workflow</span>
-1. Identify OS profile
-2. List running processes (windows.pslist)
-3. Detect injected code (windows.malfind)
-...</pre>
-        <pre id="yaml-cloud" class="cs-yaml-example" style="display:none"><span class="c">---</span>
-<span class="k">name:</span> <span class="v">aws-s3-bucket-security-audit</span>
-<span class="k">description:</span> <span class="s">Audit S3 bucket configurations
-  for public exposure, encryption gaps,
-  and misconfigured access policies.</span>
-<span class="k">domain:</span> <span class="v">cybersecurity</span>
-<span class="k">subdomain:</span> <span class="v">cloud-security</span>
-<span class="k">tags:</span> <span class="v">[aws, s3, cloud-security,
-  misconfiguration, data-exposure]</span>
-<span class="c">---</span>
-
-<span class="c">## When to Use</span>
-Use when assessing AWS environment for
-publicly accessible or poorly secured
-S3 buckets...
-
-<span class="c">## Prerequisites</span>
-- AWS CLI configured
-- IAM permissions: s3:List*, s3:Get*
-- jq installed
-
-<span class="c">## Workflow</span>
-1. List all buckets (aws s3 ls)
-2. Check public access settings
-3. Audit bucket policies and ACLs
-...</pre>
-        <pre id="yaml-redteam" class="cs-yaml-example" style="display:none"><span class="c">---</span>
-<span class="k">name:</span> <span class="v">kerberoasting-with-impacket</span>
-<span class="k">description:</span> <span class="s">Extract Kerberos service tickets
-  for offline cracking to identify weak
-  service account passwords in AD.</span>
-<span class="k">domain:</span> <span class="v">cybersecurity</span>
-<span class="k">subdomain:</span> <span class="v">red-teaming</span>
-<span class="k">tags:</span> <span class="v">[kerberos, active-directory,
-  impacket, credential-access]</span>
-<span class="c">---</span>
-
-<span class="c">## When to Use</span>
-Use during internal pentest when you
-have domain credentials and need to
-escalate privileges...
-
-<span class="c">## Prerequisites</span>
-- Impacket installed
-- Valid domain credentials
-- Network access to DC
-
-<span class="c">## Workflow</span>
-1. Run GetUserSPNs.py to enumerate SPNs
-2. Request service tickets (-request)
-3. Crack hashes with hashcat -m 13100
-...</pre>
-      </div>
-      <div class="cs-hiw-steps">
-        <div class="cs-hiw-step">
-          <div class="cs-hiw-step-num">1</div>
-          <div>
-            <div class="cs-hiw-step-title">Discovery (~40 tokens)</div>
-            <div class="cs-hiw-step-desc">The AI agent reads YAML frontmatter only — name, description, domain, tags. Zero token waste on irrelevant skills.</div>
-          </div>
-        </div>
-        <div class="cs-hiw-step">
-          <div class="cs-hiw-step-num">2</div>
-          <div>
-            <div class="cs-hiw-step-title">Relevance Check</div>
-            <div class="cs-hiw-step-desc">If the skill matches the task, the agent loads the full body — workflow steps, prerequisites, tool commands, verification checks.</div>
-          </div>
-        </div>
-        <div class="cs-hiw-step">
-          <div class="cs-hiw-step-num">3</div>
-          <div>
-            <div class="cs-hiw-step-title">Execution</div>
-            <div class="cs-hiw-step-desc">The agent follows step-by-step workflow instructions with exact CLI commands, MITRE ATT&amp;CK references, and verification steps.</div>
-          </div>
-        </div>
-        <div class="cs-hiw-step">
-          <div class="cs-hiw-step-num">4</div>
-          <div>
-            <div class="cs-hiw-step-title">MITRE ATT&amp;CK Mapped</div>
-            <div class="cs-hiw-step-desc">Every skill references the relevant MITRE ATT&amp;CK technique IDs, NIST CSF controls, and CVEs where applicable.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- PLATFORMS -->
   <div class="cs-platforms-wrap" id="platforms">
@@ -1017,6 +1060,22 @@ escalate privileges...
       el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
       fadeObserver.observe(el);
     });
+
+    // Live GitHub star count
+    fetch('https://api.github.com/repos/mukul975/Anthropic-Cybersecurity-Skills')
+      .then(r => r.json())
+      .then(d => {
+        const el = document.getElementById('gh-star-count');
+        if (el && typeof d.stargazers_count === 'number') {
+          el.textContent = d.stargazers_count >= 1000
+            ? (d.stargazers_count / 1000).toFixed(1) + 'k'
+            : d.stargazers_count;
+        }
+      })
+      .catch(() => {
+        const el = document.getElementById('gh-star-count');
+        if (el) el.textContent = '★';
+      });
   </script>
 </body>
 </html>
