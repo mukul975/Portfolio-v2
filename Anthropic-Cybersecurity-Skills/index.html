@@ -22,11 +22,11 @@
   <meta name="description" content="734+ structured cybersecurity skills for AI agents. MITRE ATT&CK mapped. Works with Claude Code, GitHub Copilot, Cursor, Gemini CLI and 26+ platforms. Open source, Apache 2.0.">
   <meta name="keywords" content="cybersecurity skills, AI agent skills, Claude Code skills, MITRE ATT&CK, agentskills.io, Claude cybersecurity, AI security tools, penetration testing AI, threat hunting skills, open source cybersecurity">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.mahipal.engineer/cyber-skills">
+  <link rel="canonical" href="https://www.mahipal.engineer/Anthropic-Cybersecurity-Skills">
   <meta property="og:title" content="Anthropic Cybersecurity Skills — 734+ AI-Ready Skills for Claude Code &amp; More">
   <meta property="og:description" content="The largest open-source collection of cybersecurity skills for AI agents. MITRE ATT&CK mapped. Claude Code, GitHub Copilot, Cursor, Gemini CLI and 26+ platforms.">
   <meta property="og:image" content="https://www.mahipal.engineer/assets/og-image.png">
-  <meta property="og:url" content="https://www.mahipal.engineer/cyber-skills">
+  <meta property="og:url" content="https://www.mahipal.engineer/Anthropic-Cybersecurity-Skills">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Anthropic Cybersecurity Skills — 734+ AI-Ready Skills for Claude Code &amp; More">
@@ -44,7 +44,7 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Anthropic Cybersecurity Skills",
-    "url": "https://www.mahipal.engineer/cyber-skills",
+    "url": "https://www.mahipal.engineer/Anthropic-Cybersecurity-Skills",
     "applicationCategory": "SecurityApplication",
     "operatingSystem": "Any",
     "offers": {
@@ -320,6 +320,38 @@
     }
     .cs-platform-item:hover { border-color: var(--accent-border); color: var(--text-primary); }
     .cs-platform-item i { color: var(--accent); font-size: 16px; width: 18px; text-align: center; }
+
+    /* FLOATING STAR BUTTON */
+    .cs-float-star {
+      position: fixed; right: 24px; bottom: 84px; z-index: 98;
+      display: flex; align-items: center; gap: 8px;
+      background: #1a1b21; border: 1px solid #f0c040;
+      color: #f0c040; font-family: var(--font-mono); font-size: 13px;
+      padding: 10px 16px; border-radius: 40px;
+      text-decoration: none; font-weight: 600;
+      box-shadow: 0 4px 20px rgba(240,192,64,0.18);
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      opacity: 0; transform: translateY(12px) scale(0.95);
+      pointer-events: none;
+    }
+    .cs-float-star.visible {
+      opacity: 1; transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+    .cs-float-star:hover {
+      background: rgba(240,192,64,0.12);
+      box-shadow: 0 6px 28px rgba(240,192,64,0.28);
+      transform: translateY(-2px) scale(1.02);
+    }
+    .cs-float-star i { font-size: 14px; }
+    .cs-float-star-count {
+      background: rgba(240,192,64,0.15); border: 1px solid rgba(240,192,64,0.3);
+      padding: 1px 8px; border-radius: 10px; font-size: 11px;
+    }
+    @media (max-width: 640px) {
+      .cs-float-star { right: 14px; bottom: 76px; padding: 9px 13px; font-size: 12px; }
+      .cs-float-star span:not(.cs-float-star-count) { display: none; }
+    }
 
     /* FOOTER CTA */
     .cs-footer-cta {
