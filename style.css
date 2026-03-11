@@ -381,6 +381,47 @@ html {
   background: rgba(100, 244, 172, 0.18);
   border-color: #64f4ac;
 }
+.cyber-cta-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cyber-cta-secondary {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--text-secondary, #cacaca);
+}
+.cyber-cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+.cyber-install-snippet {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(100, 244, 172, 0.15);
+  border-radius: 6px;
+  padding: 10px 18px;
+  margin-bottom: 20px;
+  max-width: 580px;
+}
+.cyber-install-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  color: #64f4ac;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.cyber-install-snippet code {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 13px;
+  color: #e8e9eb;
+  word-break: break-all;
+}
 
 /* Scroll to top button */
 .scroll-to-top {
