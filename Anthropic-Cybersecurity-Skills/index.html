@@ -599,7 +599,7 @@
         <span class="cs-stat-lbl">Platforms</span>
       </div>
       <div class="cs-stat-item">
-        <span class="cs-stat-num">3500+</span>
+        <span class="cs-stat-num" id="hero-star-count">—</span>
         <span class="cs-stat-lbl">GitHub Stars</span>
       </div>
     </div>
@@ -920,6 +920,13 @@ escalate privileges...
   </div>
   </main>
 
+  <!-- FLOATING STAR BUTTON -->
+  <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" target="_blank" rel="noopener noreferrer" class="cs-float-star" id="cs-float-star" aria-label="Star on GitHub">
+    <i class="fa-regular fa-star" aria-hidden="true"></i>
+    <span>Star</span>
+    <span class="cs-float-star-count" id="float-star-count">—</span>
+  </a>
+
   <!-- STICKY INSTALL BAR -->
   <div class="cs-sticky-bar" aria-label="Quick install command">
     <code>npx skills add mukul975/Anthropic-Cybersecurity-Skills</code>
@@ -1117,21 +1124,37 @@ escalate privileges...
       fadeObserver.observe(el);
     });
 
-    // Live GitHub star count
+    // Live GitHub star count — updates nav btn, hero stats bar, and floating button
     fetch('https://api.github.com/repos/mukul975/Anthropic-Cybersecurity-Skills')
       .then(r => r.json())
       .then(d => {
-        const el = document.getElementById('gh-star-count');
-        if (el && typeof d.stargazers_count === 'number') {
-          el.textContent = d.stargazers_count >= 1000
-            ? (d.stargazers_count / 1000).toFixed(1) + 'k'
-            : d.stargazers_count;
-        }
+        if (typeof d.stargazers_count !== 'number') return;
+        const count = d.stargazers_count;
+        const fmt = count >= 1000 ? (count / 1000).toFixed(1) + 'k' : count;
+        const navEl = document.getElementById('gh-star-count');
+        const heroEl = document.getElementById('hero-star-count');
+        const floatEl = document.getElementById('float-star-count');
+        if (navEl) navEl.textContent = fmt;
+        if (heroEl) heroEl.textContent = fmt;
+        if (floatEl) floatEl.textContent = fmt;
       })
       .catch(() => {
-        const el = document.getElementById('gh-star-count');
-        if (el) el.textContent = '★';
+        ['gh-star-count','hero-star-count','float-star-count'].forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.textContent = '★';
+        });
       });
+
+    // Floating star button — show after scrolling past hero
+    const floatStar = document.getElementById('cs-float-star');
+    if (floatStar) {
+      const floatHeroObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          floatStar.classList.toggle('visible', !entry.isIntersecting);
+        });
+      }, { threshold: 0 });
+      floatHeroObserver.observe(document.querySelector('.cs-hero'));
+    }
   </script>
 </body>
 </html>
