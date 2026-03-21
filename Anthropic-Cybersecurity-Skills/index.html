@@ -250,8 +250,11 @@
       border-radius: 10px; padding: 22px 18px;
       display: flex; flex-direction: column; gap: 10px;
       transition: border-color 0.25s, background 0.25s, transform 0.2s;
+      text-decoration: none; color: inherit; cursor: pointer;
     }
     .cs-cat-card:hover { background: var(--bg-card-hover); border-color: var(--accent-border); transform: translateY(-3px); }
+    .cs-cat-arrow { font-size: 10px; color: var(--text-muted); margin-top: auto; opacity: 0; transition: opacity 0.2s, color 0.2s; font-family: var(--font-mono); }
+    .cs-cat-card:hover .cs-cat-arrow { opacity: 1; color: var(--accent); }
     .cs-cat-icon { font-size: 24px; color: var(--accent); }
     .cs-cat-name { font-family: var(--font-mono); font-size: 13px; color: var(--text-primary); font-weight: 600; }
     .cs-cat-count { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); }
@@ -317,6 +320,7 @@
       display: flex; align-items: center; gap: 10px;
       font-family: var(--font-mono); font-size: 13px; color: var(--text-secondary);
       transition: border-color 0.2s, color 0.2s;
+      text-decoration: none; cursor: pointer;
     }
     .cs-platform-item:hover { border-color: var(--accent-border); color: var(--text-primary); }
     .cs-platform-item i { color: var(--accent); font-size: 16px; width: 18px; text-align: center; }
@@ -741,126 +745,146 @@ escalate privileges...
         <p class="cs-section-sub">From cloud security to OT/ICS, red teaming to compliance — structured skills ready for any AI agent.</p>
       </div>
       <div class="cs-cats-grid">
-        <div class="cs-cat-card">
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=cloud-security" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-cloud" aria-hidden="true"></i>
           <div class="cs-cat-name">Cloud Security</div>
           <div class="cs-cat-count">60 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:100%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=threat-hunting" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-crosshairs" aria-hidden="true"></i>
           <div class="cs-cat-name">Threat Hunting</div>
           <div class="cs-cat-count">55 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:92%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=threat-intelligence" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-satellite-dish" aria-hidden="true"></i>
           <div class="cs-cat-name">Threat Intelligence</div>
           <div class="cs-cat-count">50 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:83%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=web-app-security" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-globe" aria-hidden="true"></i>
           <div class="cs-cat-name">Web App Security</div>
           <div class="cs-cat-count">42 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:70%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=network-security" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-network-wired" aria-hidden="true"></i>
           <div class="cs-cat-name">Network Security</div>
           <div class="cs-cat-count">40 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:67%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=malware-analysis" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-bug" aria-hidden="true"></i>
           <div class="cs-cat-name">Malware Analysis</div>
           <div class="cs-cat-count">39 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:65%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=digital-forensics" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-magnifying-glass" aria-hidden="true"></i>
           <div class="cs-cat-name">Digital Forensics</div>
           <div class="cs-cat-count">37 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:62%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=security-operations" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-tower-broadcast" aria-hidden="true"></i>
           <div class="cs-cat-name">Security Operations</div>
           <div class="cs-cat-count">36 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:60%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=identity-access" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-id-card" aria-hidden="true"></i>
           <div class="cs-cat-name">Identity &amp; Access</div>
           <div class="cs-cat-count">35 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:58%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=soc-operations" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-shield-halved" aria-hidden="true"></i>
           <div class="cs-cat-name">SOC Operations</div>
           <div class="cs-cat-count">33 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:55%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=container-security" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-box" aria-hidden="true"></i>
           <div class="cs-cat-name">Container Security</div>
           <div class="cs-cat-count">30 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:50%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=ot-ics" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-industry" aria-hidden="true"></i>
           <div class="cs-cat-name">OT/ICS Security</div>
           <div class="cs-cat-count">28 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:47%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=api-security" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-plug" aria-hidden="true"></i>
           <div class="cs-cat-name">API Security</div>
           <div class="cs-cat-count">28 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:47%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=incident-response" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
           <div class="cs-cat-name">Incident Response</div>
           <div class="cs-cat-count">25 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:42%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=vulnerability-management" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-circle-exclamation" aria-hidden="true"></i>
           <div class="cs-cat-name">Vulnerability Mgmt</div>
           <div class="cs-cat-count">25 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:42%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=red-teaming" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-user-secret" aria-hidden="true"></i>
           <div class="cs-cat-name">Red Teaming</div>
           <div class="cs-cat-count">24 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:40%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=penetration-testing" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-lock-open" aria-hidden="true"></i>
           <div class="cs-cat-name">Penetration Testing</div>
           <div class="cs-cat-count">23 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:38%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=devsecops" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-code-branch" aria-hidden="true"></i>
           <div class="cs-cat-name">DevSecOps</div>
           <div class="cs-cat-count">17 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:28%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=endpoint-security" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-computer" aria-hidden="true"></i>
           <div class="cs-cat-name">Endpoint Security</div>
           <div class="cs-cat-count">17 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:28%"></div></div>
-        </div>
-        <div class="cs-cat-card">
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills/search?q=phishing-defense" target="_blank" rel="noopener noreferrer" class="cs-cat-card">
           <i class="cs-cat-icon fa-solid fa-fish-fins" aria-hidden="true"></i>
           <div class="cs-cat-name">Phishing Defense</div>
           <div class="cs-cat-count">16 skills</div>
           <div class="cs-cat-bar"><div class="cs-cat-bar-fill" style="width:27%"></div></div>
-        </div>
+          <span class="cs-cat-arrow">Browse skills →</span>
+        </a>
       </div>
     </div>
   </div>
@@ -874,23 +898,23 @@ escalate privileges...
         <p class="cs-section-sub">Any agent that reads structured Markdown can use these skills immediately.</p>
       </div>
       <div class="cs-platform-grid">
-        <div class="cs-platform-item"><i class="fa-solid fa-robot" aria-hidden="true"></i> Claude Code</div>
-        <div class="cs-platform-item"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub Copilot</div>
-        <div class="cs-platform-item"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> Cursor</div>
-        <div class="cs-platform-item"><i class="fa-brands fa-google" aria-hidden="true"></i> Gemini CLI</div>
-        <div class="cs-platform-item"><i class="fa-brands fa-openai" aria-hidden="true"></i> OpenAI Codex CLI</div>
-        <div class="cs-platform-item"><i class="fa-solid fa-bolt" aria-hidden="true"></i> Amp</div>
-        <div class="cs-platform-item"><i class="fa-solid fa-wind" aria-hidden="true"></i> Windsurf</div>
-        <div class="cs-platform-item"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Aider</div>
-        <div class="cs-platform-item"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> Continue</div>
-        <div class="cs-platform-item"><i class="fa-solid fa-feather" aria-hidden="true"></i> Goose</div>
-        <div class="cs-platform-item"><i class="fa-solid fa-gem" aria-hidden="true"></i> Zed</div>
-        <div class="cs-platform-item"><i class="fa-solid fa-code" aria-hidden="true"></i> Cline</div>
-        <div class="cs-platform-item"><i class="fa-solid fa-eye" aria-hidden="true"></i> Void</div>
-        <div class="cs-platform-item"><i class="fa-solid fa-satellite" aria-hidden="true"></i> Cody</div>
-        <div class="cs-platform-item"><i class="fa-solid fa-microchip" aria-hidden="true"></i> Kodu</div>
-        <div class="cs-platform-item"><i class="fa-solid fa-crow" aria-hidden="true"></i> Roo Code</div>
-        <div class="cs-platform-item"><i class="fa-solid fa-plus" aria-hidden="true"></i> +10 more</div>
+        <a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-robot" aria-hidden="true"></i> Claude Code</a>
+        <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub Copilot</a>
+        <a href="https://cursor.com" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> Cursor</a>
+        <a href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-brands fa-google" aria-hidden="true"></i> Gemini CLI</a>
+        <a href="https://github.com/openai/openai-codex" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-brands fa-openai" aria-hidden="true"></i> OpenAI Codex CLI</a>
+        <a href="https://ampcode.com" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-bolt" aria-hidden="true"></i> Amp</a>
+        <a href="https://codeium.com/windsurf" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-wind" aria-hidden="true"></i> Windsurf</a>
+        <a href="https://aider.chat" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Aider</a>
+        <a href="https://continue.dev" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> Continue</a>
+        <a href="https://github.com/block/goose" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-feather" aria-hidden="true"></i> Goose</a>
+        <a href="https://zed.dev" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-gem" aria-hidden="true"></i> Zed</a>
+        <a href="https://github.com/cline/cline" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-code" aria-hidden="true"></i> Cline</a>
+        <a href="https://voideditor.com" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-eye" aria-hidden="true"></i> Void</a>
+        <a href="https://sourcegraph.com/cody" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-satellite" aria-hidden="true"></i> Cody</a>
+        <a href="https://kodu.ai" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-microchip" aria-hidden="true"></i> Kodu</a>
+        <a href="https://github.com/RooVetGit/Roo-Code" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-crow" aria-hidden="true"></i> Roo Code</a>
+        <a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills#supported-platforms" target="_blank" rel="noopener noreferrer" class="cs-platform-item"><i class="fa-solid fa-plus" aria-hidden="true"></i> +10 more</a>
       </div>
     </div>
   </div>
