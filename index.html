@@ -49,7 +49,7 @@
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.clarity.ms">
     <link rel="preload" href="assets/fonts/CyberAlert.woff" as="font" type="font/woff" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500;700&family=Orbitron:wght@400;700&family=Share+Tech+Mono&family=Audiowide&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500;700&family=Orbitron:wght@400;700&family=Share+Tech+Mono&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
@@ -185,7 +185,7 @@
                 <p>Research Scholar</p>
                 <p>MCP Builder</p>
             </div>
-            <h2><span id="greetingText">Stay safe from cyber</span></h2>
+            <p class="hero-eyebrow-text"><span id="greetingText">Stay safe from cyber</span></p>
             <div class="body-title">
                 <h1>MCP Pioneer.<br>Security Researcher.</h1>
                 <p>I build MCP servers for AI agents — and publish the research to make them secure.</p>
@@ -251,8 +251,8 @@
               
     </section>
 
-    <section id="research" style="background-color: #2d2e3273;">
-        <div style="position: relative; padding: 100px 40px 80px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
+    <section id="research" class="section-alt">
+        <div class="section-inner">
             <div class="heading-container">
                 <h2 class="section-heading techy-title">Research</h2>
                 <p class="creative-title">Peer-reviewed work on the edges of AI, security, and human behaviour</p>
@@ -291,8 +291,8 @@
         </div>
     </section>
 
-    <section id="mcp-tools" style="background-color: #1e1f23;">
-        <div style="position: relative; padding: 100px 40px 80px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
+    <section id="mcp-tools" class="section-card">
+        <div class="section-inner">
             <div class="heading-container">
                 <h2 class="section-heading techy-title">MCP Tools</h2>
                 <p class="creative-title">Building the infrastructure layer for AI agents</p>
@@ -301,6 +301,20 @@
                 <p>Model Context Protocol (MCP) is the open standard that lets AI assistants connect to external tools and systems. Adopted by Google, Microsoft, and IBM, MCP has become the backbone of AI agent infrastructure in 2025. I've been building MCP servers since early adoption — not using the tools, building them.</p>
             </div>
             <div class="mcp-cards-container">
+                <div class="design-card mcp-card mcp-card-featured">
+                    <div>
+                        <h3>CVE MCP Server</h3>
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <p class="mcp-card-meta">Python · Model Context Protocol · 27 tools · 21 APIs</p>
+                        <p>Production-grade security intelligence for Claude. Real-time CVE lookup, EPSS scoring, MITRE ATT&amp;CK mapping, Shodan, VirusTotal, threat intel, and risk scoring — all through natural language.</p>
+                        <div class="mcp-card-links">
+                            <a href="/CVE-MCP-Server">Learn More →</a>
+                            <a href="https://github.com/mukul975/cve-mcp-server" target="_blank" rel="noopener noreferrer">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="design-card mcp-card">
                     <div>
                         <h3>PostgreSQL MCP Server</h3>
@@ -328,22 +342,12 @@
                     <p>Lets Claude, ChatGPT, and other AI assistants control Windows through natural language. File operations, system control, web automation, and Office integration. Ask it to reorganize your Downloads. Watch it happen.</p>
                     <a href="https://github.com/mukul975/mcp-windows-automation" target="_blank" rel="noopener noreferrer">GitHub →</a>
                 </div>
-                <div class="design-card mcp-card">
-                    <div>
-                        <h3>CVE MCP Server</h3>
-                        <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-                    <p class="mcp-card-meta">Python · Model Context Protocol · 27 tools · 21 APIs</p>
-                    <p>Production-grade security intelligence for Claude. Real-time CVE lookup, EPSS scoring, MITRE ATT&amp;CK mapping, Shodan, VirusTotal, threat intel, and risk scoring — all through natural language.</p>
-                    <a href="/CVE-MCP-Server">Learn More →</a>
-                    <a href="https://github.com/mukul975/cve-mcp-server" target="_blank" rel="noopener noreferrer" style="margin-left:12px;">GitHub →</a>
-                </div>
             </div>
         </div>
     </section>
 
-    <section id="cyber-skills" style="background-color: #2d2e3273;">
-        <div style="position: relative; padding: 100px 40px 80px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
+    <section id="cyber-skills" class="section-alt">
+        <div class="section-inner">
             <div class="heading-container">
                 <h2 class="section-heading techy-title">Cybersecurity Skills</h2>
                 <p class="creative-title">734+ structured skills for AI agents — MITRE ATT&amp;CK mapped</p>
@@ -352,7 +356,7 @@
                 <div class="cyber-attck-badge">
                     <i class="fa-solid fa-shield-halved"></i>&nbsp; MITRE ATT&amp;CK Mapped &nbsp;·&nbsp; <i class="fa-solid fa-scale-balanced"></i>&nbsp; Apache 2.0 &nbsp;·&nbsp; <i class="fa-brands fa-github"></i>&nbsp; 22 Stars
                 </div>
-                <p>The largest open-source collection of cybersecurity skills for AI agents. Every skill follows the <a href="https://agentskills.io" target="_blank" rel="noopener noreferrer" style="color:#64f4ac;">agentskills.io</a> open standard and deploys instantly to Claude Code, GitHub Copilot, OpenAI Codex CLI, Cursor, Gemini CLI, and 20+ other platforms. Each skill includes YAML frontmatter for zero-token discovery, full workflow steps, prerequisites, tool commands, and verification checks.</p>
+                <p>The largest open-source collection of cybersecurity skills for AI agents. Every skill follows the <a href="https://agentskills.io" target="_blank" rel="noopener noreferrer">agentskills.io</a> open standard and deploys instantly to Claude Code, GitHub Copilot, OpenAI Codex CLI, Cursor, Gemini CLI, and 20+ other platforms. Each skill includes YAML frontmatter for zero-token discovery, full workflow steps, prerequisites, tool commands, and verification checks.</p>
                 <div class="cyber-skills-stats">
                     <div class="cyber-stat">
                         <span class="cyber-stat-number">734+</span>
@@ -456,12 +460,12 @@
         </div>
     </section>
 
-    <section id="introduction" style="background-color: #25262a;">
+    <section id="introduction" class="section-surface">
         <div class="heading-container">
             <h2 class="section-heading techy-title">Latest Projects</h2>
             <p class="creative-title">Perfect solutions for digital experience</p>
         </div>
-        <div style="display: flex; position: relative; justify-content: space-between; padding: 100px 40px; min-height: 95vh; align-items: center; width: 100%;">
+        <div class="section-inner-row">
             <div class="image-container">
                 <div class="body-part-2">
                     <div class="container">
@@ -553,12 +557,12 @@
     </section>
     <!-- End of Projects section -->
 
-    <section id="skill" style="background-color: #2d2e3273;">
+    <section id="skill" class="section-alt">
         <div class="heading-container">
             <h2 class="section-heading techy-title">Skills</h2>
             <p class="creative-title">Technical expertise and tools</p>
         </div>
-        <div style="display: flex; position: relative; justify-content: space-between; padding: 100px 40px; min-height: 95vh; align-items: center; width: 100%;">
+        <div class="section-inner-row">
             <div class="cards-container">
                 <div class="skills-grid-wrapper">
 
@@ -649,7 +653,7 @@
     </button>
 
     </main>
-    <footer id="footer" style="background-color: #25262a;">
+    <footer id="footer" class="section-surface">
         <div class="footer-left">
             <form name="contactus" netlify netlify-honeypot="bot-field" method="POST" action="/thank-you">
                 <p style="display:none;"><label>Do not fill: <input name="bot-field"></label></p>
